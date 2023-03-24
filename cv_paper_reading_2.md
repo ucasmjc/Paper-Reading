@@ -136,6 +136,7 @@
 - 分别对每个尺寸的特征图进行深度假设采样和单应性变换，统一到ref平面，利用pair-wise feature correlation分别计算src和ref的correlation volumn，再经过加权和（权重为在文中有说）计算聚合correlation volumn
 - 将聚合correlation volumn经过3D卷积层得到probability volumn，使用argmax获得深度预测，使用focal loss
 - 低分辨率的深度图在上采样后和下一阶段的特征图结合，实现coarse-to-fine预测深度图
+> 有个有意思的观点，本文认为MVS本质是一对多的匹配问题，因为当ref,src的相机确定，对任意可能的深度，由对极约束ref上的点p对应的点必在src的极线上，相当于p与极线上的候选点的匹配
 
 # 图形学拾遗
 - 刚体运动（2D/3D）：旋转/平移/刚体/缩放/仿射/透视变换矩阵，齐次坐标，旋转向量/欧拉角/四元数
