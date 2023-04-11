@@ -18,13 +18,13 @@
   - [8.DANet:Dual attention network for scene segmentation(2019)](#8danetdual-attention-network-for-scene-segmentation2019)
   - [9.CCNet: Criss-Cross Attention for Semantic Segmentation(2019)](#9ccnet-criss-cross-attention-for-semantic-segmentation2019)
   - [10.ANN:Asymmetric non-local neural networks for semantic segmentation(2019)](#10annasymmetric-non-local-neural-networks-for-semantic-segmentation2019)
-  - [13.Gcnet: Non-local networks meet squeeze-excitation networks and beyond(2019)](#13gcnet-non-local-networks-meet-squeeze-excitation-networks-and-beyond2019)
-  - [14.OCRNet:Object-contextual representations for semantic segmentation(2020)](#14ocrnetobject-contextual-representations-for-semantic-segmentation2020)
-  - [15.Pointrend: Image segmentation as rendering(2020)](#15pointrend-image-segmentation-as-rendering2020)
-  - [16.Bisenet v2: Bilateral network with guided aggregation for real-time semantic segmentation(2021)](#16bisenet-v2-bilateral-network-with-guided-aggregation-for-real-time-semantic-segmentation2021)
-  - [17.DPT:Vision Transformer for Dense Prediction(2021)](#17dptvision-transformer-for-dense-prediction2021)
-  - [18.Segmenter: Transformer for semantic segmentation(2021)](#18segmenter-transformer-for-semantic-segmentation2021)
-  - [19.SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers(2021)](#19segformer-simple-and-efficient-design-for-semantic-segmentation-with-transformers2021)
+  - [11.Gcnet: Non-local networks meet squeeze-excitation networks and beyond(2019)](#11gcnet-non-local-networks-meet-squeeze-excitation-networks-and-beyond2019)
+  - [12.OCRNet:Object-contextual representations for semantic segmentation(2020)](#12ocrnetobject-contextual-representations-for-semantic-segmentation2020)
+  - [13.Pointrend: Image segmentation as rendering(2020)](#13pointrend-image-segmentation-as-rendering2020)
+  - [14.Bisenet v2: Bilateral network with guided aggregation for real-time semantic segmentation(2021)](#14bisenet-v2-bilateral-network-with-guided-aggregation-for-real-time-semantic-segmentation2021)
+  - [15.DPT:Vision Transformer for Dense Prediction(2021)](#15dptvision-transformer-for-dense-prediction2021)
+  - [16.Segmenter: Transformer for semantic segmentation(2021)](#16segmenter-transformer-for-semantic-segmentation2021)
+  - [17.SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers(2021)](#17segformer-simple-and-efficient-design-for-semantic-segmentation-with-transformers2021)
 
 # Backbone
 ## 1.HRNet:Deep High-Resolution Representation Learning for Human Pose Estimation(2019)
@@ -55,7 +55,7 @@
 ![Alt text](backbone/image/2.png)
 
 - Linear Bottleneck:ÂÛÎÄÖĞÈÏÎª£¬¶ÔÊäÈëX£¬Ã¿¸ö¼¤»î¿Õ¼äBXµÄ·Ö²¼Ïàµ±ÓÚÒ»¸öĞËÈ¤Á÷ĞÎ£¬Á÷ĞÎ¿ÉÒÔÓ³Éäµ½µÍÎ¬¿Õ¼ä£¨·Ö²¼¸üÃÜ¼¯£©£¬¶øReLUÔÚÒıÈë·ÇÏßĞÔµÄÍ¬Ê±»áÆÆ»µÁ÷ĞÎÖĞµÄĞÅÏ¢£¬ÀıÈç£¬Èç¹û¼¤»î¿Õ¼äBXÎ¬¶È±È½ÏµÍ£¬$B^{-1}ReLU(BX)$»Ö¸´µÄXÆÆ»µºÜÑÏÖØ£¬¸ßÎ¬Ôò»¹ºÃ¡£ÎÒÃÇÔÚÉè¼Æ¸ßĞ§ÍøÂçÊ±£¬Ï£Íû¾¡¿ÉÄÜµØ½µµÍÎ¬¶È£¬ÓÖ²»Ï£ÍûReLUÆÆ»µÌ«¶àĞÅÏ¢£¬Òò´Ë³¢ÊÔÔÚµÍÎ¬¶ÈµÄ¾í»ı²Ù×÷ºóÈ¥³ı·ÇÏßĞÔ²ã£¬ÒÔ±£ÁôÍêÕûĞÅÏ¢£¬×÷ÎªÒ»¸öLinear bottleneck¡£
-- Inverted residuals£ºÈçÍ¼ËùÊ¾£¬v2ÏÈ½«ÊäÈëÉıÎ¬£¨ÎªÁËÔÚ3\*3¾í»ıÊ±ÌáÈ¡¸ü·á¸»µÄÌØÕ÷£©£¬ÔÙ½øĞĞÉî¶È¿É·ÖÀë¾í»ı£¬×îºóÍ¨¹ıLinear Bottleneck£¨Ã»ReLU£©½µÎ¬¡£ÒòÎªÕû¸öblocÁ½Í·±¡ÖĞ¼äºñ£¬ºÍresidual blockÏà·´£¬ËùÒÔµÃÃû
+- Inverted residuals£ºÈçÍ¼ËùÊ¾£¬v2ÏÈ½«ÊäÈëÉıÎ¬£¨ÎªÁËÔÚ3\*3¾í»ıÊ±ÌáÈ¡¸ü·á¸»µÄÌØÕ÷£©£¬ÔÙ½øĞĞÉî¶È¿É·ÖÀë¾í»ı£¬×îºóÍ¨¹ıLinear Bottleneck£¨Ã»ReLU£©½µÎ¬¡£ÒòÎªÕû¸öblocÁ½Í·±¡ÖĞ¼äºñ£¬ºÍresidual blockÏà·´£¬ËùÒÔµÃÃû¡£ºÜ´ó³Ì¶È»º½âÁËdepth-wiseµÄÕıÔò»¯Ğ§Ó¦¡£
 
 
 
@@ -113,7 +113,7 @@
 # Semantic Segmentation
 ## 1.Deeplab v3:Rethinking atrous convolution for semantic image segmentation(2017)
 [ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1706.05587.pdf%EF%BC%8C%E6%8E%A8%E8%8D%90%E5%9C%A8%E7%9C%8B%E5%AE%8C%E6%9C%AC%E6%96%87%E4%B9%8B%E5%90%8E%E4%BB%94%E7%BB%86%E9%98%85%E8%AF%BB%E8%AE%BA%E6%96%87%E4%BB%A5%E5%8F%8A%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%8F%AF%E4%BB%A5%E6%9B%B4%E5%A5%BD%E7%90%86%E8%A7%A3%E3%80%82)
-ÔÚdeeplab v2µÄ»ù´¡ÉÏ½øĞĞÁË¸Ä½ø£¬Ìá³öÁË¼¶ÁªµÄ»ò²¢ÁªµÄÓ¦ÓÃÁË¿Õ¶´¾í»ıµÄÄ£¿é£¬¾ùÓÅÓÚv2
+ÔÚdeeplab v2µÄ»ù´¡ÉÏ½øĞĞÁË¸Ä½ø£¬Ìá³öÁË¼¶ÁªµÄ»ò²¢ÁªµÄÓ¦ÓÃÁË¿Õ¶´¾í»ıµÄÄ£¿é£¬¾ùÓÅÓÚv2£¬»¹½«¿Õ¶´¾í»ıÈÚÈëbackbone£¬¿ÉµÃµ½·Ö±æÂÊ¸ü´óµÄÌØÕ÷Í¼(1/8)
 - ¼¶Áª£º½«ResnetµÄºó¼¸¸öblock¸Ä³É¿Õ¶´¾í»ı£¬ÊäÈëÓëÊä³ö·Ö±æÂÊ²»±ä£¬Ã¿¸öblockÖ®¼ä¡¢ºÍÄÚ²¿µÄ¾í»ı²ãÖ®¼ä¿Õ¶´¾í»ıµÄÅòÕÍÏµÊı¾ùÓĞÇø±ğ£¬Ò»·½Ãæ·ÀÖ¹grid problem£¬ÁíÒ»·½ÃæÀ©´ó¸ĞÊÜÒ°
 - ²¢Áª£¨ASPP£©£º¸Ä½øÁËÁ½µã£¬¼ÓÈëÁËBN£»¿Õ¶´¾í»ıµÄÅòÕÍÏµÊıÌ«´óµÄ»°£¬ÎŞĞ§µã£¨padding£©µÄÊıÁ¿´ó´óÔö¼Ó£¬´ï²»µ½À©´ó¸ĞÊÜÒ°µÄÄ¿µÄ£¬Òò´Ë¼ÓÈëÁËImage-levelÌØÕ÷£¨È«¾Ö³Ø»¯²ã£©£¬ºó½Ó1\*1¾í»ıºÍÉÏ²ÉÑù£¬ÓëASPPÊä³öÆ´½ÓÔÚÒ»Æğ
 
@@ -126,7 +126,7 @@
 ![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/1.png)
 
 - Ö÷ÒªÌØµãÊÇ£¬ÍøÂç°üÀ¨Á½ÌõÂ·¾¶£¬context pathºÍspatial path¡£Ç°ÕßÍ¨¹ı¿ìËÙµÄÏÂ²ÉÑùpretrainedÖ÷¸ÉÍøÂçXception£¬À©´ó¸ĞÊÜÒ°¡£»ñµÃ½ÏµÍ·Ö±æÂÊµÄº¬·á¸»ÓïÒåÌØÕ÷µÄÌØÕ÷Í¼£¬ºó½ÓARM(Attention refinement module)£¬ÆäÖĞ°üº¬È«¾Ö³Ø»¯£»ºóÕß½öÓĞÈı¸ö¾í»ı²ã£¬ÏÂ²ÉÑù8±¶£¨Òò´Ë¾¡¹Ü³ß´ç´óµ«¼ÆËãÁ¿²»´ó£©£¬±£ÁôÁËÔ­Í¼Ïñ·á¸»µÄ¿Õ¼äÌØÕ÷¡£
-- ÒòÎªÁ½ÌõÂ·¾¶µÄĞÅÏ¢µÄlevel²»Í¬£¬Òò´ËÓÃFFM½áºÏÕâÁ½²¿·ÖµÄÌØÕ÷¡£
+- ÒòÎªÁ½ÌõÂ·¾¶µÄĞÅÏ¢µÄlevel²»Í¬£¬Òò´ËÓÃFFM½áºÏÕâÁ½²¿·ÖµÄÌØÕ÷£¬BNÍ³Ò»³ß¶È£¬ÀàSEÄ£¿éÑ¡ÔñÌØÕ÷¡£
 
 ## 3.Psanet: Point-wise spatial attention network for scene parsing(2018)
 [ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_ECCV_2018/papers/Hengshuang_Zhao_PSANet_Point-wise_Spatial_ECCV_2018_paper.pdf)
@@ -148,13 +148,13 @@
 ## 5.Icnet:Icnet for real-time semantic segmentation on high-resolution images(2018)
 [ÂÛÎÄÁ´½Ó](https://openaccess.thecvf.com/content_ECCV_2018/papers/Hengshuang_Zhao_ICNet_for_Real-Time_ECCV_2018_paper.pdf)
 
-Ìá³öÁËÒ»¸öÊµÊ±ÓïÒå·Ö¸î¿ò¼ÜICNet£¬ÀûÓÃ¼¶ÁªÍ¼Æ¬ÊäÈë£¬ÈÚºÏ²»Í¬³ß´çµÄÌØÕ÷Í¼£¬ÊµÏÖcoarse-to-fineÔ¤²â£¬ÔÚµÍ·Ö±æÂÊÌØÕ÷Í¼Ê¹ÓÃÍêÕûÍøÂç£¬ÔÚ¸ß·Ö±æÂÊ²¿·ÖÊ¹ÓÃÇáÁ¿¼¶ÍøÂç£¬´Ó¶øÏÔÖø¼õĞ¡¼ÆËãÁ¿¡£
+Ìá³öÁËÒ»¸öÊµÊ±ÓïÒå·Ö¸î¿ò¼ÜICNet£¬ÀûÓÃ¼¶ÁªÍ¼Æ¬ÊäÈë£¬ÈÚºÏ²»Í¬³ß´çµÄÌØÕ÷Í¼£¬ÊµÏÖcoarse-to-fineÔ¤²â£¬ÔÚµÍ·Ö±æÂÊÌØÕ÷Í¼Ê¹ÓÃÍêÕûÍøÂç£¬ÔÚ¸ß·Ö±æÂÊ²¿·ÖÊ¹ÓÃÇáÁ¿¼¶ÍøÂç£¬²¢ÇÒÔÚÇ°¼¸²ã¹²ÏíÈ¨ÖØ£¬´Ó¶øÏÔÖø¼õĞ¡¼ÆËãÁ¿¡£
 
 ![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/4.png)
 
 - ÔÚCFF(cascade feature fusion)Ä£¿é£¬Ê¹ÓÃË«ÏßĞÔ²åÖµºÍ¿Õ¶´¾í»ıÊµÏÖ²»Í¬³ß´çÌØÕ÷Í¼µÄÈÚºÏ
 
-Ê¹ÓÃ¸¨ÖúËğÊ§£¬Ã¿¸ö³ß´çµÄÌØÕ÷Í¼¶¼»á±»ÓÃÀ´Ô¤²â²¢¼ÆËãËğÊ§£¬×îÖÕËğÊ§»á¼ÓÈ¨
+- Ê¹ÓÃ¸¨ÖúËğÊ§£¬Ã¿¸ö³ß´çµÄÌØÕ÷Í¼¶¼»á±»ÓÃÀ´Ô¤²â²¢¼ÆËãËğÊ§£¬×îÖÕËğÊ§»á¼ÓÈ¨
 
 
 ## 6.Non-local neural networks(2018)
@@ -201,14 +201,14 @@ position attention module£¬¼ÆËãÌØÕ÷Í¼H\*WÎ¬¶ÈµÄ×Ô×¢ÒâÁ¦£¬µÃµ½(H\*W)\*(H\*W)µÄ×¢Ò
 
 APNBºÍAFNBÇø±ğÔÚÓÚ£¬½«×¢ÒâÁ¦Ä£¿éµÄkeyºÍqueryµÄÎ¬¶ÈÍ¨¹ı²ÉÑùÓÉC\*HW½µµ½ÁËC\*S£¬ÆäÖĞSÔ¶Ğ¡ÓÚHW£¬²ÉÑù·½Ê½ÎªSPPÄ£¿é£¬ÕâÑùÒ²ÈÚºÏÁË¶à³ß¶ÈÌØÕ÷¡£
 
-## 13.Gcnet: Non-local networks meet squeeze-excitation networks and beyond(2019)
+## 11.Gcnet: Non-local networks meet squeeze-excitation networks and beyond(2019)
 [ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_ICCVW_2019/papers/NeurArch/Cao_GCNet_Non-Local_Networks_Meet_Squeeze-Excitation_Networks_and_Beyond_ICCVW_2019_paper.pdf)
 
 ÒÀÈ»ÊÇÎªÁË¼ò»¯non-local£¬±¾ÎÄÏÈÌá³ö£¬ËûÃÇ·¢ÏÖnon-local²¶×½µÄ×¢ÒâÁ¦Í¼¶ÔËùÓĞquery¼¸ºõÒ»Ñù£¬´Ó¶øÌá³öÁËÒ»¸ö¹²Ïí×¢ÒâÁ¦Í¼H\*WµÄ¼ò»¯non-local¿é¡£ÎÄÖĞ½«SENetºÍ¼ò»¯µÄnon-local¿éÍ³Ò»³ÉGlobal context modeling framework£¬²¢½«¶şÕßµÄÓÅÊÆ½áºÏ£¬ÏÈ¼ÆËãÈ«¾Ö×¢ÒâÁ¦£¨query¹²Ïí×¢ÒâÁ¦Í¼£©H\*W£¬ÔÙÓëC\*HWÏà³Ë£¬µÃµ½CÎ¬ÕÅÁ¿£¬Í¨¹ıÁ½¸ö1\*1µÄbottleneck£¬ÓëC\*H\*WÏà¼Ó£¨²Ğ²îÁ¬½Ó£©¡£ÓÉ¹ã²¥»úÖÆ£¬ÆäÊµÏàµ±ÓÚÃ¿¸öÏñËØ¾­×¢ÒâÁ¦¼ÓÈ¨ºóµÄÌØÕ÷¶¼ÏàµÈ£¬µÈÓÚÊä³öµÄCÎ¬ÏòÁ¿
 
 ![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/10.png)
 
-## 14.OCRNet:Object-contextual representations for semantic segmentation(2020)
+## 12.OCRNet:Object-contextual representations for semantic segmentation(2020)
 [ÂÛÎÄÁ´½Ó](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123510171.pdf)
 
 ±¾ÎÄ¾Û½¹ÓÚ¾ÛºÏÉÏÏÂÎÄÌØÕ÷£¬Óë¹ıÈ¥µÄASPPºÍ×î½üµÄnon-local·½·¨²»Í¬£¬±¾ÎÄ½«ÏñËØÓë¶ÔÏóÇøÓòµÄÉÏÏÂÎÄÌØÕ÷·á¸»½øÌØÕ÷
@@ -221,7 +221,7 @@ APNBºÍAFNBÇø±ğÔÚÓÚ£¬½«×¢ÒâÁ¦Ä£¿éµÄkeyºÍqueryµÄÎ¬¶ÈÍ¨¹ı²ÉÑùÓÉC\*HW½µµ½ÁËC\*S£¬ÆäÖ
 - Pixel-Region Rela:Í¨¹ıµã³Ë+softmax¼ÆËãÃ¿¸öÏñËØµãÓëÃ¿¸ö¶ÔÏóÇøÓòµÄÏà¹ØĞÔ£¬µÃµ½H\*W\*K£¬ÓëÔ­ÏñËØÌØÕ÷µşÆğÀ´£¬½øĞĞÔ¤²â
 - ÔÚÉÏÊö¹ı³ÌµÄÌØÕ÷½áºÏÊ±¶¼ÓĞ¸ötransformation,1\*1+BN+ReLU
 
-## 15.Pointrend: Image segmentation as rendering(2020)
+## 13.Pointrend: Image segmentation as rendering(2020)
 [ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2020/papers/Kirillov_PointRend_Image_Segmentation_As_Rendering_CVPR_2020_paper.pdf)
 
 ±¾ÎÄ½«·Ö¸îÈÎÎñÊÓ×÷äÖÈ¾À´½â¾ö±ßÔµ¾«¶ÈµÄÎÊÌâ£¬±¾ÖÊÉÏÊÇÒ»ÖÖĞÂµÄÉÏ²ÉÑù·½Ê½£¬Õë¶ÔÄÑµã¹À¼Æ
@@ -230,14 +230,14 @@ APNBºÍAFNBÇø±ğÔÚÓÚ£¬½«×¢ÒâÁ¦Ä£¿éµÄkeyºÍqueryµÄÎ¬¶ÈÍ¨¹ı²ÉÑùÓÉC\*HW½µµ½ÁËC\*S£¬ÆäÖ
 
 ¶ÔÓÚCNNÌáÈ¡³öµÄÏ¸Á£¶ÈÌØÕ÷Í¼£¬ÏÈ²ÉÓÃÒ»¸öÇáÁ¿·Ö¸îÍøÂçµÃµ½coarse predict(7\*7)¡£Ó¦ÓÃË«ÏßĞÔ²åÖµ£¬½«·Ö±æÂÊ·­±¶£¬ÔÚÕâĞ©µãÖĞÌô³öN¸ö¡°ÄÑµã¡±£¨ÖÃĞÅ¶ÈµÍ£¬»òÕßËµ±ß½ç´¦£©£¬ÀûÓÃÒ»¸öMLP¶ÔÕâĞ©µã×öµãÔ¤²â£¨ÌØÕ÷À´×ÔÌØÕ÷Í¼ºÍ´ÖÔ¤²âÍ¼£©£¬²¢¸üĞÂÔ¤²âÍ¼£¬ÔÙË«ÏßĞÔ²åÖµ£¬µü´úÖ±µ½Ô¤²âÍ¼µÄ·Ö±æÂÊ´óÓÚµÈÓÚÔ­Í¼¡£
 
-## 16.Bisenet v2: Bilateral network with guided aggregation for real-time semantic segmentation(2021)
+## 14.Bisenet v2: Bilateral network with guided aggregation for real-time semantic segmentation(2021)
 [ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2004.02147)
 
 ÑØÓÃÁËBisenet v1µÄÉè¼Æ£¬·Ö±ğÓÃÓïÒå·ÖÖ§ºÍÏ¸½Ú·ÖÖ§²¶×½ÉÏÏÂÎÄÌØÕ÷ºÍÏ¸Á£¶ÈÌØÕ÷¡£Ïà±Èv1£¬±¾ÎÄ¾«ĞÄÉè¼ÆÁËÓïÒå·ÖÖ§£¬°üÀ¨¿ìËÙÏÂ²ÉÑùµÄ²¢ĞĞ¾í»ıstem block£¬Ó¦ÓÃÁËÉî¶È¿É·ÖÀë¾í»ı¾ÛºÏÌØÕ÷µÄGather-and-Expansion Layer£¬ºÍ·ÅÔÚ×îºó²¶×½¸ß²ã´ÎÌØÕ÷µÄContext Embedding Block£¨È«¾Ö³Ø»¯ÔÙ1\*1ÔÙ²Ğ²îÏà¼Ó£©¡£±¾ÎÄ»¹¾«ĞÄÉè¼ÆÁËÌØÕ÷¾ÛºÏÄ£¿é£¬½«Á½¸ö·ÖÖ§µÄÌØÕ÷°´²»Í¬level·Ö±ğ¾ÛºÏ£¬µÃµ½¸üºÃµÄ±íÕ÷£¬
 
 ![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/13.png)
 
-## 17.DPT:Vision Transformer for Dense Prediction(2021)
+## 15.DPT:Vision Transformer for Dense Prediction(2021)
 [ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content/ICCV2021/papers/Ranftl_Vision_Transformers_for_Dense_Prediction_ICCV_2021_paper.pdf)
 
 Ìá³öÓÃÓÚÃÜ¼¯Ô¤²âµÄvision transformer DPT£¬¼ÓÈëÁË¸ü¶à¾í»ıÌØĞÔ¡£
@@ -247,7 +247,7 @@ APNBºÍAFNBÇø±ğÔÚÓÚ£¬½«×¢ÒâÁ¦Ä£¿éµÄkeyºÍqueryµÄÎ¬¶ÈÍ¨¹ı²ÉÑùÓÉC\*HW½µµ½ÁËC\*S£¬ÆäÖ
 - encoder²¿·ÖºÍViTÒ»Ñù£¬¼ÓÈëÁËÒ»¸öÓÃÓÚ·ÖÀàµÄreadout token£¬¸ÃtokenÔÚread²Ù×÷ÖĞ±»ºöÂÔ/×÷ÎªÈ«¾ÖÌØÕ÷ÈÚºÏ¡£
 - decoder£º¶Ô²»Í¬transformer¿éµÄÊä³ö×é×°³É**²»Í¬·Ö±æÂÊ**µÄÀàËÆÓÚÍ¼ÏñµÄĞÎÊ½£¬ÕâÊÇÍ¨¹ıbottleneckºÍÉÏ/ÏÂ²ÉÑù£¬ÆäÖĞ½ÏlowµÄtransformer¿é»á±»×é×°³É¸ü´ó·Ö±æÂÊµÄ±íÊ¾£¬ÒòÎªÆäÖĞ°üº¬¸ü¶àÏ¸Á£¶ÈÌØÕ÷¡£Ö®ºó»¹Ê¹ÓÃÁËÀàËÆÓÚrefinenetµÄ·½Ê½£¬ÈÚºÏ¶à³ß¶ÈµÄÌØÕ÷Í¼
 
-## 18.Segmenter: Transformer for semantic segmentation(2021)
+## 16.Segmenter: Transformer for semantic segmentation(2021)
 [ÂÛÎÄÁ´½Ó](https://openaccess.thecvf.com/content/ICCV2021/papers/Strudel_Segmenter_Transformer_for_Semantic_Segmentation_ICCV_2021_paper.pdf)
 
 ±¾ÎÄÌá³öÁËÒ»ÖÖĞÂµÄmask transformer decoder£¬´Ó¶øÌá³öSegmenterÄ£ĞÍ
@@ -258,7 +258,7 @@ APNBºÍAFNBÇø±ğÔÚÓÚ£¬½«×¢ÒâÁ¦Ä£¿éµÄkeyºÍqueryµÄÎ¬¶ÈÍ¨¹ı²ÉÑùÓÉC\*HW½µµ½ÁËC\*S£¬ÆäÖ
 - ½«encoderÊä³öµÄK¸öpatch encodingºÍ¿ÉÑ§Ï°µÄËæ»ú³õÊ¼»¯µÄK¸öclassÇ¶ÈëÒ»ÆğÊäÈëmask transformer£¬Î¬¶È¾ùÎªD¡£½«Êä³öµÄÃ¿¸öpatchÇ¶ÈëºÍÀàÇ¶Èë×öµã»ı£¬(N\*D)\*(D\*K)=N\*K£¬´Ó¶øµÃµ½Ã¿¸öpatchµÄÀàÑÚÂë£¬ÔÙreshapeºÍÉÏ²ÉÑùµÃµ½Ô¤²âÍ¼
 
 
-## 19.SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers(2021)
+## 17.SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers(2021)
 [ÂÛÎÄÁ´½Ó](https://proceedings.neurips.cc/paper/2021/file/64f1f27bf1b4ec22924fd0acb550c235-Paper.pdf)
 
 ±¾ÎÄÌá³öÁËÒ»ÖÖ¼òµ¥¸ßĞ§µÄ»ùÓÚtransformerµÄÓïÒå·Ö¸îÄ£ĞÍSegmenter

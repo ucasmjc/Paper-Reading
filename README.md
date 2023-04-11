@@ -6,3 +6,5 @@
 3.18-3.24£º[cv_paper_reading_2](https://github.com/ucasmjc/cv_paper_reading/blob/main/cv_paper_reading_2.pdf)
 
 3.25-3.31£º[cv_paper_reading_3](https://github.com/ucasmjc/cv_paper_reading/blob/main/cv_paper_reading_3.pdf)
+
+4.1-4.14£º[cv_paper_reading_4](https://github.com/ucasmjc/cv_paper_reading/blob/main/cv_paper_reading_4.pdf)
