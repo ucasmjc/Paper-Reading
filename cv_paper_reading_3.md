@@ -261,7 +261,7 @@ APNBºÍAFNBÇø±ğÔÚÓÚ£¬½«×¢ÒâÁ¦Ä£¿éµÄkeyºÍqueryµÄÎ¬¶ÈÍ¨¹ı²ÉÑùÓÉC\*HW½µµ½ÁËC\*S£¬ÆäÖ
 ## 17.SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers(2021)
 [ÂÛÎÄÁ´½Ó](https://proceedings.neurips.cc/paper/2021/file/64f1f27bf1b4ec22924fd0acb550c235-Paper.pdf)
 
-±¾ÎÄÌá³öÁËÒ»ÖÖ¼òµ¥¸ßĞ§µÄ»ùÓÚtransformerµÄÓïÒå·Ö¸îÄ£ĞÍSegmenter
+±¾ÎÄÌá³öÁËÒ»ÖÖ¼òµ¥¸ßĞ§µÄ»ùÓÚtransformerµÄÓïÒå·Ö¸îÄ£ĞÍSegmenter£¬²ã´Î±àÂëÆ÷ºÍÇáÁ¿¼¶½âÂëÆ÷
 
 ![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/15.png)
 

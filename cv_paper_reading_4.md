@@ -3,45 +3,43 @@
   - [2.Parsenet: Looking wider to see better(2015)](#2parsenet-looking-wider-to-see-better2015)
   - [3.Shufflenet: An extremely efficient convolutional neural network for mobile devices(2018)](#3shufflenet-an-extremely-efficient-convolutional-neural-network-for-mobile-devices2018)
   - [4.Shufflenet v2: Practical guidelines for efficient cnn architecture design(20)](#4shufflenet-v2-practical-guidelines-for-efficient-cnn-architecture-design20)
-- [Portrait segmentation](#portrait-segmentation)
-  - [1.PortraitNet: Real-time Portrait Segmentation Network for Mobile Device(2019)](#1portraitnet-real-time-portrait-segmentation-network-for-mobile-device2019)
-  - [2.Boundary-sensitive network for portrait segmentation(2019)](#2boundary-sensitive-network-for-portrait-segmentation2019)
-  - [3.Sinet: Extreme lightweight portrait segmentation networks with spatial squeeze module and information blocking decoder(2020)](#3sinet-extreme-lightweight-portrait-segmentation-networks-with-spatial-squeeze-module-and-information-blocking-decoder2020)
-  - [4.PP-HumanSeg: Connectivity-Aware Portrait Segmentation with a Large-Scale Teleconferencing Video Dataset(0222)](#4pp-humanseg-connectivity-aware-portrait-segmentation-with-a-large-scale-teleconferencing-video-dataset0222)
+  - [5.Ghostnet: More features from cheap operations(2020)](#5ghostnet-more-features-from-cheap-operations2020)
 - [Real-Time Semantic Segmentation](#real-time-semantic-segmentation)
   - [1.Enet: A deep neural network architecture for real-time semantic segmentation(2016)](#1enet-a-deep-neural-network-architecture-for-real-time-semantic-segmentation2016)
   - [2.Erfnet: Efficient residual factorized convnet for real-time semantic segmentation(2017)](#2erfnet-efficient-residual-factorized-convnet-for-real-time-semantic-segmentation2017)
   - [3.ShelfNet for Fast Semantic Segmentation(2018)](#3shelfnet-for-fast-semantic-segmentation2018)
   - [4.Contextnet: Exploring context and detail for semantic segmentation in real-time(2018)](#4contextnet-exploring-context-and-detail-for-semantic-segmentation-in-real-time2018)
-  - [4.Espnet: Efficient spatial pyramid of dilated convolutions for semantic segmentation(2018)](#4espnet-efficient-spatial-pyramid-of-dilated-convolutions-for-semantic-segmentation2018)
-  - [5.Espnetv2: A light-weight, power efficient, and general purpose convolutional neural network(2019)](#5espnetv2-a-light-weight-power-efficient-and-general-purpose-convolutional-neural-network2019)
-  - [4.Fast-scnn: Fast semantic segmentation network(2019)](#4fast-scnn-fast-semantic-segmentation-network2019)
-  - [5.swiftnetRN:In defense of pre-trained imagenet architectures for real-time semantic segmentation of road-driving images(2019)](#5swiftnetrnin-defense-of-pre-trained-imagenet-architectures-for-real-time-semantic-segmentation-of-road-driving-images2019)
-  - [6.Dfanet: Deep feature aggregation for real-time semantic segmentation(2019)](#6dfanet-deep-feature-aggregation-for-real-time-semantic-segmentation2019)
-  - [7.MSFNet:Real-time semantic segmentation via multiply spatial fusion network(2019)](#7msfnetreal-time-semantic-segmentation-via-multiply-spatial-fusion-network2019)
-  - [8.CGNet: A Light-weight Context Guided Network for Semantic Segmentation(2020)](#8cgnet-a-light-weight-context-guided-network-for-semantic-segmentation2020)
-  - [9.SFNet:Semantic flow for fast and accurate scene parsing(2020)](#9sfnetsemantic-flow-for-fast-and-accurate-scene-parsing2020)
-  - [10.Real-time semantic segmentation with fast attention(2020)](#10real-time-semantic-segmentation-with-fast-attention2020)
-  - [11.RegSeg:Rethink dilated convolution for real-time semantic segmentation(2021)](#11regsegrethink-dilated-convolution-for-real-time-semantic-segmentation2021)
-  - [12.STDC:Rethinking BiSeNet For Real-time Semantic Segmentation(2021)](#12stdcrethinking-bisenet-for-real-time-semantic-segmentation2021)
-  - [13.DDRNet:Deep dual-resolution networks for real-time and accurate semantic segmentation of road scenes(2021)](#13ddrnetdeep-dual-resolution-networks-for-real-time-and-accurate-semantic-segmentation-of-road-scenes2021)
-  - [14.Pp-liteseg: A superior real-time semantic segmentation model(2022)](#14pp-liteseg-a-superior-real-time-semantic-segmentation-model2022)
-  - [15.PIDNet: A Real-time Semantic Segmentation Network Inspired from PID Controller(2022)](#15pidnet-a-real-time-semantic-segmentation-network-inspired-from-pid-controller2022)
-  - [SFNet: Faster, Accurate, and Domain Agnostic Semantic Segmentation via Semantic Flow(2022)](#sfnet-faster-accurate-and-domain-agnostic-semantic-segmentation-via-semantic-flow2022)
-  - [16.DWRSeg: Dilation-wise Residual Network for Real-time Semantic Segmentation(2022)](#16dwrseg-dilation-wise-residual-network-for-real-time-semantic-segmentation2022)
-  - [17.LETNet:Lightweight Real-time Semantic Segmentation Network with Efficient Transformer and CNN(2023)](#17letnetlightweight-real-time-semantic-segmentation-network-with-efficient-transformer-and-cnn2023)
-- [Semantic segmentation](#semantic-segmentation)
-  - [1.ISANet:Interlaced Sparse Self-Attention for Semantic Segmentation()](#1isanetinterlaced-sparse-self-attention-for-semantic-segmentation)
-  - [2.FastFCN: Rethinking Dilated Convolution in the Backbone for Semantic Segmentation(2019)](#2fastfcn-rethinking-dilated-convolution-in-the-backbone-for-semantic-segmentation2019)
-  - [3.Adaptive pyramid context network for semantic segmentation(2019)](#3adaptive-pyramid-context-network-for-semantic-segmentation2019)
-  - [4.Expectation-maximization attention networks for semantic segmentation(2019)](#4expectation-maximization-attention-networks-for-semantic-segmentation2019)
-  - [5.Dynamic Multi-scale Filters for Semantic Segmentation(2019)](#5dynamic-multi-scale-filters-for-semantic-segmentation2019)
-  - [6.DNLNet:Disentangled non-local neural networks(2020)](#6dnlnetdisentangled-non-local-neural-networks2020)
-  - [7.MaskFormer: Per-Pixel Classification is Not All You Need for Semantic Segmentation(2021)](#7maskformer-per-pixel-classification-is-not-all-you-need-for-semantic-segmentation2021)
-  - [8.Mask2Former:Masked-attention mask transformer for universal image segmentation(2022)](#8mask2formermasked-attention-mask-transformer-for-universal-image-segmentation2022)
+  - [5.Espnet: Efficient spatial pyramid of dilated convolutions for semantic segmentation(2018)](#5espnet-efficient-spatial-pyramid-of-dilated-convolutions-for-semantic-segmentation2018)
+  - [6.Espnetv2: A light-weight, power efficient, and general purpose convolutional neural network(2019)](#6espnetv2-a-light-weight-power-efficient-and-general-purpose-convolutional-neural-network2019)
+  - [7.Fast-scnn: Fast semantic segmentation network(2019)](#7fast-scnn-fast-semantic-segmentation-network2019)
+  - [8.swiftnetRN:In defense of pre-trained imagenet architectures for real-time semantic segmentation of road-driving images(2019)](#8swiftnetrnin-defense-of-pre-trained-imagenet-architectures-for-real-time-semantic-segmentation-of-road-driving-images2019)
+  - [9.Dfanet: Deep feature aggregation for real-time semantic segmentation(2019)](#9dfanet-deep-feature-aggregation-for-real-time-semantic-segmentation2019)
+  - [10.MSFNet:Real-time semantic segmentation via multiply spatial fusion network(2019)](#10msfnetreal-time-semantic-segmentation-via-multiply-spatial-fusion-network2019)
+  - [11.Lednet: A lightweight encoder-decoder network for real-time semantic segmentation(2019)](#11lednet-a-lightweight-encoder-decoder-network-for-real-time-semantic-segmentation2019)
+  - [12.CGNet: A Light-weight Context Guided Network for Semantic Segmentation(2020)](#12cgnet-a-light-weight-context-guided-network-for-semantic-segmentation2020)
+  - [13.SFNet:Semantic flow for fast and accurate scene parsing(2020)](#13sfnetsemantic-flow-for-fast-and-accurate-scene-parsing2020)
+  - [14.FANet:Real-time semantic segmentation with fast attention(2020)](#14fanetreal-time-semantic-segmentation-with-fast-attention2020)
+  - [15.RegSeg:Rethink dilated convolution for real-time semantic segmentation(2021)](#15regsegrethink-dilated-convolution-for-real-time-semantic-segmentation2021)
+  - [16.STDC:Rethinking BiSeNet For Real-time Semantic Segmentation(2021)](#16stdcrethinking-bisenet-for-real-time-semantic-segmentation2021)
+  - [17.DDRNet:Deep dual-resolution networks for real-time and accurate semantic segmentation of road scenes(2021)](#17ddrnetdeep-dual-resolution-networks-for-real-time-and-accurate-semantic-segmentation-of-road-scenes2021)
+  - [18.Pp-liteseg: A superior real-time semantic segmentation model(2022)](#18pp-liteseg-a-superior-real-time-semantic-segmentation-model2022)
+  - [19.PIDNet: A Real-time Semantic Segmentation Network Inspired from PID Controller(2022)](#19pidnet-a-real-time-semantic-segmentation-network-inspired-from-pid-controller2022)
+  - [20.SFNet-Lite: Faster, Accurate, and Domain Agnostic Semantic Segmentation via Semantic Flow(2022)](#20sfnet-lite-faster-accurate-and-domain-agnostic-semantic-segmentation-via-semantic-flow2022)
+  - [21.TopFormer: Token pyramid transformer for mobile semantic segmentation(2022)](#21topformer-token-pyramid-transformer-for-mobile-semantic-segmentation2022)
+  - [22.RTFormer: Efficient Design for Real-Time Semantic Segmentation with Transformer(2022)](#22rtformer-efficient-design-for-real-time-semantic-segmentation-with-transformer2022)
+  - [23.FFNet:Simple and Efficient Architectures for Semantic Segmentation(2022)](#23ffnetsimple-and-efficient-architectures-for-semantic-segmentation2022)
+  - [24.DWRSeg: Dilation-wise Residual Network for Real-time Semantic Segmentation(2022)](#24dwrseg-dilation-wise-residual-network-for-real-time-semantic-segmentation2022)
+  - [25.SeaFormer: Squeeze-enhanced Axial Transformer for Mobile Semantic Segmentation(2023)](#25seaformer-squeeze-enhanced-axial-transformer-for-mobile-semantic-segmentation2023)
+  - [26.AFFormer:Head-Free Lightweight Semantic Segmentation with Linear Transformer(2023)](#26afformerhead-free-lightweight-semantic-segmentation-with-linear-transformer2023)
+  - [27.LETNet:Lightweight Real-time Semantic Segmentation Network with Efficient Transformer and CNN(2023)](#27letnetlightweight-real-time-semantic-segmentation-network-with-efficient-transformer-and-cnn2023)
 - [others](#others)
   - [1.Deformable Convolutional Networks(2017)](#1deformable-convolutional-networks2017)
   - [2.Deformable ConvNets v2: More Deformable, Better Results(2019)](#2deformable-convnets-v2-more-deformable-better-results2019)
+- [Portrait segmentation](#portrait-segmentation)
+  - [1.PortraitNet: Real-time Portrait Segmentation Network for Mobile Device(2019)](#1portraitnet-real-time-portrait-segmentation-network-for-mobile-device2019)
+  - [2.Boundary-sensitive network for portrait segmentation(2019)](#2boundary-sensitive-network-for-portrait-segmentation2019)
+  - [3.Sinet: Extreme lightweight portrait segmentation networks with spatial squeeze module and information blocking decoder(2020)](#3sinet-extreme-lightweight-portrait-segmentation-networks-with-spatial-squeeze-module-and-information-blocking-decoder2020)
+  - [4.PP-HumanSeg: Connectivity-Aware Portrait Segmentation with a Large-Scale Teleconferencing Video Dataset(0222)](#4pp-humanseg-connectivity-aware-portrait-segmentation-with-a-large-scale-teleconferencing-video-dataset0222)
 # Backbone
 ## 1.Xception: Deep Learning with Depthwise Separable Convolutions(2017)
 
@@ -74,6 +72,289 @@ mobilenet½«bottleneck(1\*1+3\*3+1\*1)ÖĞµÄ3\*3¾í»ıÓÅ»¯³ÉÉî¶È¿É·ÖÀë¾í»ı£¬´ó´ó¼õĞ¡Á
 - ²»ÄÜºöÂÔÔªËØ¼¶²Ù×÷£¨ÈçADD,Relu£©¡£È¡Ïûv1µÄ²Ğ²îÁ¬½Ó£¬»»Îªconcatation
 ![Alt text](backbone/image/9.png)
 - ¾ßÌåÊµÏÖÊ±£¬ÏÈ½«channel·Ö×é£¬ÆäÖĞÒ»²¿·ÖÊ¹ÓÃºãµÈÓ³Éä²¢ÓëÁíÒ»²¿·ÖµÄÊä³öconcatationÆğÀ´£¬²¢½øĞĞshuffle
+
+## 5.Ghostnet: More features from cheap operations(2020)
+[ÂÛÎÄÁ´½Ó](https://openaccess.thecvf.com/content_CVPR_2020/papers/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.pdf)
+
+
+
+
+
+
+# Real-Time Semantic Segmentation
+
+
+
+## 1.Enet: A deep neural network architecture for real-time semantic segmentation(2016)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1606.02147.pdf)
+Éè¼ÆÁËÒ»¸öÊµÊ±·Ö¸îÍøÂç£¬Ê¹ÓÃÁËºÜ¶àtrick
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/1.png)
+- ¼õÉÙÏÂ²ÉÑùºÍÉÏ²ÉÑù¹ı³ÌµÄ·Ö¸î¾«¶È¶ªÊ§£¬ÓÃsegnetµÄ·½·¨ÉÏ²ÉÑù
+- ·Ç¶Ô³ÆµÄEncoder-Decoder½á¹¹£¬½µµÍ²ÎÊıÁ¿
+- ¼¤»îº¯ÊıÊ¹ÓÃPReLU£¬¶ø·ÇReLU
+- ½«±ê×¼¾í»ı·Ö½â³ÉÁ½¸ö´ø×´¾í»ı£¬²Ğ²îÁ´½ÓµÄÁíÒ»±ß²»ÊÇºãµÈÁ¬½Ó¶øÊÇmax pool
+- Ê¹ÓÃ¿Õ¶´¾í»ı£¬ÕıÔò»¯
+- ¸Ä½øÁËbottleneckµÄ1\*1²½³¤Îª2µÄ¾í»ı£¬»»ÎªÁË2\*2µÄ£»²¢ÔÚ³Ø»¯½µµÍ³ß´çºó£¬Ê¹ÓÃ¾í»ıÌá¸ßÎ¬¶È
+## 2.Erfnet: Efficient residual factorized convnet for real-time semantic segmentation(2017)
+[ÂÛÎÄÁ´½Ó](http://www.robesafe.com/personal/roberto.arroyo/docs/Romera17tits.pdf)
+
+EnetËäÈ»²ÎÊıĞ¡£¬µ«¾«¶ÈÌ«²î¡£±¾ÎÄ¸Ä½ø²Ğ²î¿ì£¬Ìá³öerfnet
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/2.png)
+- Ô­resnetÌá³öÁ½ÖÖ²Ğ²î¿é£¬¶øÕâ²ÎÊıºÍ¾«¶ÈÀàËÆ¡£bottleneckÀàĞÍ(b)ÒòËæÉî¶ÈÔö¼Ó£¬¼ÆËã³É±¾¸üĞ¡¶ø¹ã±»Ê¹ÓÃ£»¶øÒ»Ğ©ÂÛÎÄÖĞÌáµ½£¬ËæÉî¶ÈÔö¼Ó£¬(a)Àà×¼È·ĞÔ¸ü¸ß¡£
+- Enet¸Ä½øÁË(b)Àà£¬±¾ÎÄ¸Ä½ø(a)ÀàÀ´Ìá¸ß¾«¶È¡£ËüÌá³öÁËfactorized residual layers·Ö½â¾í»ı£¬ÊÇ±ê×¼¾í»ıµÄ¡°µÍÖÈ½üËÆ¡±
+
+
+## 3.ShelfNet for Fast Semantic Segmentation(2018)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1811.11254v6.pdf)
+shelfnetÖĞÓĞ¶à¸öencoder-decoder¶Ô£¬Ìá¸ßÁË¾«¶È£¬²¢Í¨¹ı½µµÍÍ¨µÀÊıÀ´¼õĞ¡¼ÆËã¸ºµ£
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/3.png)
+
+- 2£¬4Ïàµ±ÓÚdecoder£¬0¡¢3Ïàµ±ÓÚencoder¡£1µÄ1\*1¾í»ı½«CNNÌáÈ¡µÄÌØÕ÷Í¼½µÎ¬4±¶
+- ÎªÊ²Ã´Ğ§¹ûºÃ£¿×÷ÕßÈÏÎª£¬shelfnetÏàµ±ÓÚ¶à¸öFCNµÄ¼¯³É£¬ÌØÕ÷Í¼³ß´çÓĞ4ÖÖµÄsegnetÏàµ±ÓÚ4¸öFCN£¬¶øShelfnetÏàµ±ÓÚ29¸ö£¨Ó¦¸ÃÊÇ×éºÏÊıÑ§µÄÖªÊ¶£©£»²¢ÇÒ£¬shelfnetÏàµ±ÓÚdeepºÍshallowÂ·¾¶µÄ¼¯³É
+- S-BlockÖĞµÄÁ½¸ö3\*3¾í»ı¹²ÏíÈ¨ÖØ£¬×÷ÕßËµ½è¼øÁËRNN£¬²¢ÇÒBN²ãÊÇ²»Í¬µÄ£¬ÔÚ²»½µµÍ¾«¶ÈµÄÍ¬Ê±´ó´ó¼õÉÙ²ÎÊı
+## 4.Contextnet: Exploring context and detail for semantic segmentation in real-time(2018)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1805.04554)
+
+Ë«·ÖÖ§Â·¾¶£¬·Ö±ğÊäÈë·Ö±æÂÊ²»Í¬µÄÍ¼Æ¬£¬Ó¦ÓÃÁËÉî¶È¿É·ÖÀë¾í»ı¡£
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/16.png)
+
+## 5.Espnet: Efficient spatial pyramid of dilated convolutions for semantic segmentation(2018)
+[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_ECCV_2018/papers/Sachin_Mehta_ESPNet_Efficient_Spatial_ECCV_2018_paper.pdf)
+
+½«±ê×¼¾í»ı·Ö½âÎª1\*1£¨½µÎ¬£©ºÍ¿Õ¼ä¿Õ¶´¾í»ı½ğ×ÖËş£¨²¶×½¶à¸ĞÊÜÒ°ÌØÕ÷£©£¬ÒòÎª½µÎ¬ËùÒÔ¼´Ê¹½ğ×ÖËş²ÎÊıÒ²²»¶à¡£
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/17.png)
+
+EspÄ£¿éÏÈ½µÎ¬µ½N/K£¬ÔÙ²¢ĞĞÊ¹ÓÃK¸ö²»Í¬À©ÕÅÂÊµÄ¿Õ¶´¾í»ı£¬µÃµ½K¸öN/KÎ¬µÄÊä³ö£¬Èç¹ûÖ±½ÓÁ¬½ÓÆğÀ´»áÓĞÎ±Ó°£¨£¿£¬¸Ğ¾õÊÇgrid problem£©£¬ËùÒÔÊ¹ÓÃHFF(Hierarchical feature fusion)ÏÈÁ½Á½ÈÚºÏ¡£
+
+## 6.Espnetv2: A light-weight, power efficient, and general purpose convolutional neural network(2019)
+[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2019/papers/Mehta_ESPNetv2_A_Light-Weight_Power_Efficient_and_General_Purpose_Convolutional_Neural_CVPR_2019_paper.pdf)
+
+ÔÚEsp¿éµÄ»ù´¡ÉÏ£¬½«¿Õ¶´¾í»ı¸ÄÎªÉî¶È¿É·ÖÀëµÄ£¬½«×é¾í»ıÒıÈë1\*1£¬´Ó¶øÌá³öEESP¿é£¬²¢ÒÔ´ËÎªÖ÷Òª×é³É²¿·ÖÌá³öÒ»¸öÍ¨ÓÃÖ÷¸ÉÍøÂçEspnet v2
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/18.png)
+
+## 7.Fast-scnn: Fast semantic segmentation network(2019)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1902.04502)
+
+±¾ÎÄÌá³öµÄFast-SCNN½è¼øÁËencoder-decoderºÍË«·ÖÖ§½á¹¹
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/4.png)
+- ÏÈÓÃ¼¸²ã¾í»ıÀ´ÏÂ²ÉÑù(learning to downsample)£¬±È½ÏÇ³£¬Ïàµ±ÓÚË«·ÖÖ§½á¹¹ÀïµÄ¿Õ¼ä·ÖÖ§
+- globla feature extractorÀûÓÃ¼¶ÁªµÄinverted bottleneckºÍPPM£¬ÌáÈ¡È«¾ÖÌØÕ÷£¬Ïàµ±ÓÚÉÏÏÂÎÄ·ÖÖ§
+- FFM½«Á½¸ö·ÖÖ§µÄÌØÕ÷ÈÚºÏÆğÀ´£¬Õû¸ö¹ı³ÌÏàµ±ÓÚÁ½¸ö·ÖÖ§¹²ÏíÇ°¼¸²ãµÄ¼ÆËã.FFMÏàµ±ÓÚÒ»¸öskipÁ¬½Ó£¬encoder-decoder½á¹¹¡£
+
+## 8.swiftnetRN:In defense of pre-trained imagenet architectures for real-time semantic segmentation of road-driving images(2019)
+[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2019/papers/Orsic_In_Defense_of_Pre-Trained_ImageNet_Architectures_for_Real-Time_Semantic_Segmentation_CVPR_2019_paper.pdf)
+
+±¾ÎÄÈÏÎª£¬ÀûÓÃÇáÁ¿¼¶µÄÍ¨ÓÃÓïÒå·Ö¸îÄ£ĞÍ+ºáÏòÁ¬½Ó+¼òµ¥µÄ½âÂëÆ÷¿ÉÒÔÊµÏÖĞ§¹ûºÍĞ§ÂÊµÄ¾ùºâ¡£Ö®Ç°µÄĞí¶àÊµÊ±·Ö¸îÄ£ĞÍÈÏÎªÔ¤ÑµÁ·Ã»ÓÃ£¬±¾ÎÄÖ¤Ã÷ÁËÆä×÷ÓÃ
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/5.png)
+
+ÑµÁ·Ê±Ê¹ÓÃimage½ğ×ÖËş£¬encoder¹²ÏíÈ¨ÖØ£¬Í¨¹ı½ğ×ÖËşÈÚºÏºÍSPPÊµÏÖÀ©´ó¸ĞÊÜÒ°
+## 9.Dfanet: Deep feature aggregation for real-time semantic segmentation(2019)
+[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_DFANet_Deep_Feature_Aggregation_for_Real-Time_Semantic_Segmentation_CVPR_2019_paper.pdf)
+
+ÔÚ´ó´ó¼ÓËÙºÍ¼õÉÙ²ÎÊıÁ¿µÄÍ¬Ê±£¬±£³Ö¾«¶È»ù±¾²»±ä¡£
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/19.png)
+Ö÷¸ÉÍøÂçXceptionÒıÈë·ÇÏßĞÔ²ã×¢ÒâÁ¦£¨SE£©£¬¶à¸öbackboneÀ´±àÂë£¬ÎªÁËÈÃ¸ßÓïÒåÌØÕ÷ÔÚ¶à¸öbackboneÖĞÏ¸»¯£¬²¢ÊÕ¼¯·á¸»µÄ¶à¸ĞÊÜÒ°ĞÅÏ¢
+
+## 10.MSFNet:Real-time semantic segmentation via multiply spatial fusion network(2019)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1911.07217)
+½µµÍÍøÂçÉî¶È»á½µµÍ¸ĞÊÜÒ°£¬½µµÍÍ¨µÀÊı»áÏŞÖÆÌØÕ÷±íÊ¾¿Õ¼ä£¬Òò´ËÏ£Íû¿ÉÒÔÀ©´ó¸ĞÊÜÒ°£¬¶øÇÒ¿ÉÒÔ»Ö¸´¿Õ¼äËğÊ§
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/6.png)
+
+- Multi-features Fusion Module£ºÒ»¸öÇáÁ¿¸ßĞ§µÄÍøÂç£¬Í¨¹ıSAP(Spatial Aware Pooling),ÔÚÃ¿¸ö¸ĞÊÜÒ°¼¶±ğ¶¼ÓĞºÜºÃµÄ¿Õ¼äĞÅÏ¢»Ö¸´£¬²¢ÇÒ½«²»Í¬¸ĞÊÜÒ°²ã´Î£¨²»Í¬²Ğ²î¿é£©ÏàÍ¬·Ö±æÂÊµÄÌØÕ÷ÈÚºÏÆğÀ´£¬²¢ÇÒÔÚ²»Ôö¼Ó¼ÆËã³É±¾µÄÇé¿öÏÂ´ó´óÌá¸ßÁËĞÔÄÜ
+- Ìá³öÁËĞÂµÄClass Boundary SupervisionÈÎÎñ£¬¶ÔMFMÊÕ¼¯µ½µÄÌØÕ÷½øĞĞÁ½¸ö²¢ĞĞ¶ÀÁ¢µÄ¿ìËÙÉÏ²ÉÑù£¬ÆäÖĞÒ»¸öÓÃÀ´ÓĞ¼à¶½µÄ×ö±ß½çÔ¤²â£¬×îÖÕlossÊÇ¼ÓÈ¨ºÍ
+
+
+## 11.Lednet: A lightweight encoder-decoder network for real-time semantic segmentation(2019)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1905.02423)
+
+Ê¹ÓÃÁË·Ç¶Ô³ÆµÄencoder-decoder£¬¼õÉÙÁË²ÎÊı£¬Ìá³ö split-shuffle-non-bottleneck(SS-nbt)
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/20.png)
+- SS-nbt:¸Ä½øÁË²Ğ²î¿é£¨ÎŞ1\*1µÄÄÇ¸ö£©£¬¸Ğ¾õÈÚºÏÁËcrfnet,shufflenet£¬²¢ÇÒ¶ÔÍ¨µÀ½øĞĞ»®·ÖÒÔ¼õĞ¡¼ÆËãÁ¿£¨Ö®ºóµÄRegSegÓ¦¸Ã½è¼øÁËÕâ¸ö£©¡£¾í»ı·Ö½â£¬À©ÕÅ¾í»ı£¬²¢ÔÚ×îºó½øĞĞÍ¨µÀ»ìºÏ
+  ![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/21.png)
+- ½âÂëÆ÷Ê¹ÓÃÁËattention pyramid network (APN)£¬µ«ÆäÊµ²»ÊÇ±ê×¼µÄ×¢ÒâÁ¦¡£decoderÀûÓÃÁËÒ»¸öÌØÕ÷½ğ×ÖËş£¬²»¶ÏÏ¸»¯encoderµÄÊä³öµÄÓïÒåÌØÕ÷£¬×îÖÕµÃµ½Ò»¸ö×¢ÒâÁ¦£¨»òÕßËµÈ¨ÖØ°É£©£¬¼ÓÈ¨µ½encoderµÄÔ­Ê¼Êä³ö£¬²¢¸ãÁË¸öÈ«¾Ö³Ø»¯£¬¼Óµ½APNµÄÊä³öÉÏ
+## 12.CGNet: A Light-weight Context Guided Network for Semantic Segmentation(2020)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1811.08201)
+
+±¾ÎÄÖ¼ÔÚ²¶»ñËùÓĞ½×¶ÎµÄÉÏÏÂÎÄÌØÕ÷£¬×¨Îª·Ö¸îÉè¼ÆµÄÍøÂç£¬Ìá³öGC block£¬½ø¶øÒÔÆäÎªÖ÷¸ÉÌá³öGCNet
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/7.png)
+- CG blockÖĞ£¬locÌáÈ¡¾Ö²¿ÌØÕ÷£¬surÌáÈ¡ÉÏÏÂÎÄÌØÕ÷£¬joi½«Á½²¿·ÖÌØÕ÷Æ´ÆğÀ´£¬glo½è¼øseÈÚºÏÈ«¾ÖÌØÕ÷£¬´Ó¶øÊµÏÖÔÚÃ¿¸ö½×¶Î¶¼²¶»ñÉÏÏÂÎÄÌØÕ÷,À©Õ¹ÁËnon-localµÄ¸ÅÄî¡££¨ÆäËûÄ£ĞÍÍùÍùÔÚ±àÂë½×¶Î¹ıºó²ÅÓĞÉÏÏÂÎÄÄ£¿é£¬ÈçASPP,SPP£©
+- CG blockÖĞÖ»½øĞĞÖğÍ¨µÀ¾í»ı(depth-wise)£¬ÊµÑé±íÃ÷Èç¹û¼Ó¸ö1\*1£¬Ğ§¹û½µµÍºÜ¶à£¬¸ø³öµÄ¿ÉÄÜµÄ½âÊÍÎª"the local
+feature and the surrounding context feature need to maintain channel independence"
+
+## 13.SFNet:Semantic flow for fast and accurate scene parsing(2020)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2002.10120)
+ÎÄÖĞÈÏÎª²»Í¬²ãµÄÓïÒåÖ®¼ä´æÔÚgap£¬½è¼ø¹âÁ÷£¨Á½Ö¡Ö®¼äµÄ¶¯×÷²îÒì£¿£©£¬ÈÏÎª²»Í¬·Ö±æÂÊµÄÌØÕ÷Í¼¿É¿´×÷ÓïÒåÁ÷£¬ÎÒÃÇÍ¨¹ıÑ§Ï°Á÷³¡£¬¿ÉÒÔÍ³Ò»ÓïÒåĞÅÏ¢µÄlevel£¬¼õĞ¡ÔÚÈÚºÏ²»Í¬·Ö±æÂÊµÄÌØÕ÷Í¼Ê±¼õĞ¡ĞÅÏ¢ËğÊ§£¬Ìá³öÁË Flow Alignment Module£¬²¢½«ÆäÓ¦ÓÃµ½FPN½á¹¹ÖĞ£¬µÃµ½SFNet
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/8.png)
+- ÈÚºÏÁ½¸ö·Ö±æÂÊµÄÌØÕ÷Í¼h(¸ß·Ö±æÂÊ),lÊ±£¬ÏÈ½«lË«ÏßĞÔ²ÉÑù£¨°´ÕÕh·Ö±æÂÊµÄ±ê×¼Íø¸ñ²ÉÑù£©µ½¸ß·Ö±æÂÊ£¬ÔÙconca×÷ÎªÊäÈë£¬µÃµ½Á÷³¡£¨Ô¤²âµÄÊÇÃ¿¸öÏñËØµãµÄÆ«ÒÆ£©¡£Ê¹ÓÃÁ÷³¡ĞŞÕıh·Ö±æÂÊµÄ±ê×¼Íø¸ñ£¨²ÉÑùµãµÄÎ»ÖÃ±äÁË£©£¬ÔÙ´Î²ÉÑùlµÃµ½h·Ö±æÂÊµÄÌØÕ÷Í¼£¬ºÍÔ­hÏà¼ÓµÃµ½Êä³ö£¨ÕâÀàËÆÓÚÒ»¸ö²Ğ²î£©
+- FAMÄ£¿é¿ÉÒÔ¹ã·ºÓ¦ÓÃµ½ÈÚºÏ²»Í¬·Ö±æÂÊÌØÕ÷µÄÄ£¿éÖĞ
+- ÔÚÖ÷¸ÉµÄFPNÍøÂçÖĞ£¬Ëû»¹½«top-downÂ·¾¶ÖĞµÄ¸÷ÌØÕ÷Í¼Í³Ò»µ½×îÖÕµÄÌØÕ÷Í¼ÖĞ£¬Ò»Æğ½øĞĞÔ¤²â
+- Õû¸öFAMÖ»ÓÃµ½¼¸¸ö1\*1ºÍ3\*3£¬ÆäËû¶¼ÊÇÎŞĞèÑ§Ï°µÄ±ä»»£¬²ÎÊıÁ¿ºÜĞ¡
+
+## 14.FANet:Real-time semantic segmentation with fast attention(2020)
+[ÂÛÎÄÁ´½Ó](https://ieeexplore.ieee.org/ielaam/7083369/9223766/9265219-aam.pdf)
+
+×Ô×¢ÒâÁ¦¹ã·ºÓ¦ÓÃ£¬µ«Ê±¼äÏûºÄÌ«´ó£¬±¾ÎÄÌá³öÁËfast attention£¬ÓÃÀ´²¶»ñ·Ç¾Ö²¿µÄÉÏÏÂÎÄĞÅÏ¢¡£ÎªÁËÊÊÓ¦¸ß·Ö±æÂÊÊäÈë£¬Ö÷¸ÉÍøÂçÖĞ¼ÓÈëÁË¶îÍâµÄÏÂ²ÉÑù£¬Òòfast attentionµÄÈ«¾ÖĞÅÏ¢¶ø¾«¶ÈÏÂ½µºÜÉÙ¡£
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/22.png)
+½«×¢ÒâÁ¦¼ÆËãÖĞµÄsoftmax»»ÎªL2ÕıÔò»¯£¬ÔÚ¼õÉÙ¼ÆËãÁ¿µÄÍ¬Ê±Ò²Ìá¸ßÁËĞ§¹û£¬´Ó¶øÖ»ĞèÒª¾ØÕó³Ë·¨¼´¿É¼ÆËã×¢ÒâÁ¦£¬½ø¶ø½»»»¼ÆËãË³Ğò£¬ÏÈËãKºÍV£¬½«¸´ÔÓ¶ÈÓÉn\*n\*c½µµÍµ½n\*c\*c¡£
+
+## 15.RegSeg:Rethink dilated convolution for real-time semantic segmentation(2021)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2111.09957)
+
+Ö÷¸ÉÍøÂçÃ»ÓĞÊÓÒ°£¬ÌáÈ¡ÌØÕ÷²»ºÃ£¬±¾ÎÄÌá³öÒ»ÖÖdilate block(D block)£¬²¢Í¨¹ı¼¶ÁªD blockµÃµ½RegSeg.
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/9.png)
+ - D blockÀûÓÃÁË·Ö×é¾í»ıÀ´¼ÓËÙ£¬½è¼øÁËSEÄ£¿é£¬Ê¹ÓÃÁË²»Í¬ÅòÕÍÂÊµÄ¿Õ¶´¾í»ı£¬ÆäÖĞÍùÍù½«Ò»¸ögroupµÄÀ©ÕÅÂÊÉèÎª1£¬´Ó¶øÔÚÀ©´ó¸ĞÊÜÒ°µÄÍ¬Ê±±£Áô¾Ö²¿ĞÅÏ¢
+ - Ö÷¸É±àÂëÆ÷¾ÍÊÇD blockµÄ¶Ñµş£¬²½³¤Îª2µÄD blockÓĞÒ»µã²î±ğ
+## 16.STDC:Rethinking BiSeNet For Real-time Semantic Segmentation(2021)
+[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content/CVPR2021/papers/Fan_Rethinking_BiSeNet_for_Real-Time_Semantic_Segmentation_CVPR_2021_paper.pdf)
+
+ÓÅ»¯BisenetµÄË«Â·¾¶×¢ÒâÁ¦µÄÈßÓà£¬²¢Ìá³öÁËÏ¸½Ú·ÖÖ§£¨¿ÉÒÔÓ¦ÓÃµ½ËùÓĞ¿ò¼ÜÖĞ£¬Ö»ÔÚÑµÁ·Ê¹ÓÃ£¬Ëã¸ö¸¨ÖúÈÎÎñ£©£¬STDCÊÇºóÀ´³£±»ÓÃµÄÇáÁ¿¼¶Ö÷¸É
+- Ê×ÏÈÊÇSTDC(Short-Term Dense Concatenate Module)¿é
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/10.png)  
+ÉÏÍ¼Îª²½³¤Îª1µÄSTDC¿é£¬½«ÊäÈëÊäÈë¼¶ÁªµÄblock£¬ÔÚÕâ¸ö¹ı³ÌÖĞ»ñµÃ²»Í¬³ß¶ÈµÄ¸ĞÊÜÒ°£¬²¢ÇÒÎ¬¶È²»¶Ï½µµÍ£¨ÒòÎªÓïÒåĞÅÏ¢¸ü¼¯ÖĞ£©£¬²¢ÇÒ¿ÉÖ¤Ã÷£¨ÎÄÖĞÓĞ£©blockµÄÊıÁ¿¶Ô²ÎÊıµÄÓ°ÏìºÜĞ¡£¨±¾ÖÊ´ó¸ÅÊÇÒòÎªÍ¨µÀÊıÊÇÖ¸Êı¼¶µİ¼õµÄ£¬block¶àÁËÖ®ºóµÄ²ÎÊıºÜÉÙ£©£¬×îÖÕ½«²»Í¬blockµÄÌØÕ÷Í¼Á¬½ÓÆğÀ´¡£Í¨¹ıSTDC¿é£¬ÎÒÃÇµÃµ½¶à³ß¶ÈµÄÌØÕ÷£¬²¢¿ÉÒÔÍ¨¹ı¸Ä±äblockÊıÁ¿»ñµÃ¿ÉÀ©Õ¹µÄ¸ĞÊÜÒ°
+- Í¨¹ı¼¶ÁªSTDC¿é×÷ÎªÍøÂçÖ÷¸É£¬Ìá³öSTDCÍøÂç
+	![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/11.png)  
+  Ã¿¸östageÏÂ²ÉÑùÁ½±¶£¬stage 1&2ÓÉÒ»¸ö¾í»ı¿é×é³É£¬ºóÃæ¶¼ÓÉ1¸ö²½³¤Îª2µÄSTDC¿éºÍN¸ö²½³¤Îª1µÄ×é³É¡£½«stage3µÄÊä³ö×÷Îª¿Õ¼ä·ÖÖ§£¬½«stage4&5µÄÊä³öºÍ×îºóµÄÈ«¾Ö³Ø»¯½á¹û×÷ÎªÉÏÏÂÎÄ·ÖÖ§£¬½ÓÈëARM(ºÍSEÏàËÆ)£¬×îÖÕ½«Á½ÌõÂ·¾¶µÄÌØÕ÷½ÓÈëFFM(Ò²ºÍSEÏàËÆ)
+- ÔÚÑµÁ·Ê±ÒıÈë¸¨ÖúÈÎÎñ£¬ÔÚ²âÊÔÊ±²»ÓÃ£¬Òò´ËÔÚÊµÊ±·Ö¸îÖĞ¿É·º»¯¡£½«¿Õ¼ä·ÖÖ§µÄ½á¹û½ÓÈëdetail head£¬½«Êä³öÓëÏ¸½ÚGT×ö¶şÔª½»²æìØ£¬Ï¸½ÚGTÓÉ²½³¤²»Í¬µÄÀ­ÆÕÀ­Ë¹¾í»ıºË+¿ÉÑ§Ï°µÄ1\*1¾í»ı£¬²¢È¡ãĞÖµµÃµ½GTÏ¸½ÚÍ¼£¬GTÏ¸½ÚÍ¼ºÍÔ¤²âÊ¹ÓÃÁË¶şÔª½»²æìØºÍDiceµÄÁªºÏËğÊ§£¨Ï¸½ÚËùÕ¼µÄ±ÈÀı½ÏÏ¸Ğ¡£©¡£Ô­ÀíÎÒÈÏÎªÊÇ£¬À­ÆÕÀ­Ë¹¾í»ıºËÊÇÒ»ÖÖ¿ÉÒÔÌáÈ¡±ßÔµĞÅÏ¢µÄ¾í»ıºË£¬¿ÉÒÔÕÒµ½Í»±ä£¬´ÓÍ¼ĞÎ»¯½Ç¶È¡£
+## 17.DDRNet:Deep dual-resolution networks for real-time and accurate semantic segmentation of road scenes(2021)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2101.06085)
+
+±¾ÎÄÓÅ»¯ÁËË«±ß½á¹¹£¬Ìá³öÒ»¸öĞÂµÄÖ÷¸ÉÍøÂçDDRNet£¬³ıÁË¹²ÏíÇ°¼¸²ãÏÂ²ÉÑù£¬»¹½øĞĞÁË¶à´ÎË«±ßĞÅÏ¢ÈÚºÏ£¬²¢ÇÒÌá³öÁËÒ»¸öĞÂµÄÉÏÏÂÎÄÄ£¿éDASPP£¬²¶×½¶à³ß¶ÈÇÒÀ©´óÓĞĞ§¸ĞÊÜÒ°¡£
+- DASPP:Ê¹ÓÃ´óÄÚºËºÍ´ó²½³¤µÄ³Ø»¯£¬ÔÚµÍ·Ö±æÂÊµÄÌØÕ÷Í¼ÉÏ¼°½øĞĞ¶à³ß¶ÈµÄ³Ø»¯£¬²¢ÇÒ½«²»Í¬³ß¶ÈµÄÌØÕ÷ÈÚºÏ£¬»ñµÃ±È¹ıÈ¥SPPÄ£¿é¸üÇ¿µÄÌØÕ÷±íÕ÷¡£ÒòÎªDASPP×÷ÓÃÓÚ×îµÍ·Ö±æÂÊµÄÌØÕ÷Í¼£¬ËùÒÔÔö¼ÓµÄ¾í»ı²ã²»Ì«Ó°ÏìÍÆÀíËÙ¶È¡£
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/12.png)
+- DDRNet:¾«ĞÄÉè¼ÆÁËË«±ßĞÅÏ¢ÈÚºÏÄ£¿é£¬ÔÚÉÏÏÂÎÄ·ÖÖ§×îºóÊ¹ÓÃÁËDASPP£¬ÔÙÉÏ²ÉÑùÈÚºÏ½øĞĞÔ¤²â¡£ÑµÁ·Ê±ÒıÈë¸¨Öúloss¡£×îÖÕĞ§¹ûºÜºÃ¡£
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/13.png)
+
+
+## 18.Pp-liteseg: A superior real-time semantic segmentation model(2022)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2204.02681)
+Ìá³öÁË¼¸¸öĞÂµÄÄ£¿é£¬Ò»¸öÌØÕ÷ÈÚºÏÄ£¿éUnified Attention Fusion Module£¬Ò»¸ö¾ÛºÏÈ«¾ÖÉÏÏÂÎÄĞÅÏ¢µÄSimple Pyramid Pooling Module£¨¼ò»¯ÁËSPP£©£¬µÃµ½Ò»¸öĞÂÍøÂçPp-liteseg
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/14.png)
+- UAFM£ºÀûÓÃ¿Õ¼ä×¢ÒâÁ¦£¨ÑØÍ¨µÀ×ö¾ùÖµºÍmax£¬¶Ô4\*H\*W×ö±ä»»µÃµ½H\*WµÄ·ÖÊı$\alpha$£©ºÍÍ¨µÀ×¢ÒâÁ¦£¨¶ÔÌØÕ÷Í¼×ö×î´ó³Ø»¯ºÍÆ½¾ù³Ø»¯£¬×ö±ä»»µÃµ½CÎ¬·ÖÊı$\alpha$£©ÔöÇ¿ÌØÕ÷±íÊ¾£¬ÓÃ$\alpha$¼ÓÈ¨µÃµ½$out=\alpha up+(1-\alpha)high$£¬ºÍÒ»°ãÒâÒåµÄ×¢ÒâÁ¦²»Ò»Ñù
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/15.png)
+- SPPM:¼ò»¯ÁËSPP£¬¼õĞ¡¹ı³ÌÖĞºÍÊä³öµÄÍ¨µÀÊı£¬¼õÉÙ·ÖÖ§Êı£¬É¾È¥shortcut(²Ğ²îÁ¬½Ó)£¬½«Á¬½Ó»»ÎªÏà¼Ó
+- Flexible and Lightweight Decoder,ÆäÊµ¾ÍÊÇËæ×Å½âÂë½µµÍÎ¬¶È
+## 19.PIDNet: A Real-time Semantic Segmentation Network Inspired from PID Controller(2022)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2206.02066.pdf?trk=public_post_comment-text)
+
+Ë«·ÖÖ§½á¹¹ÔÚÊµÊ±ÓïÒå·Ö¸îÁìÓòÓ¦ÓÃ¹ã·º£¬µ«Ï¸½Ú·ÖÖ§ºÍ¿Õ¼ä·ÖÖ§ÌØÕ÷ÈÚºÏÊ±¿ÉÄÜÒòlevel²»Í¬¶øÓĞËğÊ§¡£±¾ÎÄÓÃ´«Í³¿ØÖÆÁìÓòµÄPIDÀ´½âÊÍ£¬¿Õ¼ä·ÖÖ§Ïàµ±ÓÚP£¬Ï¸½Ú·ÖÖ§²»¶Ï¾ÛºÏÌØÕ÷Ïàµ±ÓÚI£¬Ö»ÓÃPI¿ÉÄÜ²úÉú³¬µ÷£¬Òò´Ë¼ÓÈëD·ÖÖ§£¨PµÄÎ¢·Ö£¬¼´±ß½ç·ÖÖ§£©À´ÒÖÖÆ³¬µ÷£¬¾ßÌåËµ£¬ÓÃ±ß½ç·ÖÖ§Ö±µ½¿Õ¼äºÍÉÏÏÂÎÄ·ÖÖ§µÄÌØÕ÷ÈÚºÏ¡£ÓÉ´Ë£¬Ìá³öÁËÒ»¸öÈı·ÖÖ§ÍøÂçPIDNet
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/23.png)
+
+- ÒıÈë¸¨ÖúÈÎÎñ¡£ÔÚ¿Õ¼ä·ÖÖ§ÒıÈë·Ö¸îloss£¬ÔÚD·ÖÖ§£¬»òÕßËµAuxiliary Derivative Branch (ADB) £¬ÒıÈë±ß½ç¶şÔªËğÊ§(DiceÒÔ¼õÇáÀà±ğ²»Æ½ºâ)£¬²¢ÒıÈëboundary-awareµÄ·Ö¸îËğÊ§£¨Ö»Í³¼ÆADBÊäÈë£¨¸ÅÂÊ£©´óÓÚÄ³¸öãĞÖµµÄÏñËØµãµÄ·Ö¸îËğÊ§£©¡£
+- ¸Ä½øÁËDDRNetµÄDAPPMÄ£¿é£¬ÈÏÎªËüÌ«¸´ÔÓ¶ø²»ÄÜºÜºÃµÄ²¢ĞĞ£¬²¢ÇÒ³¬¹ıÇáÁ¿¼¶Ä£ĞÍµÄ±íÕ÷ÄÜÁ¦ÁË
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/24.png)
+
+- Pag(Pixel-attention-guided fusion module):ÔÚÏòP·ÖÖ§ÈÚÈëI·ÖÖ§ÌØÕ÷Ê±£¬¼ÆËã×¢ÒâÁ¦£¨¹ãÒåµÄ£©À´Ö¸µ¼ÈÚºÏ
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/25.png)
+- Bag(Boundary-attention-guided fusion module):ÓÃ±ß½çÌØÕ÷À´Ö¸µ¼Ï¸½ÚÌØÕ÷ºÍÉÏÏÂÎÄÌØÕ÷µÄÈÚºÏ
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/26.png)
+> ÓĞÒ»Ğ©Ï¸½ÚĞèÒª¿´´úÂë£¨Èç¹ûÓĞ±ØÒª£©£¬±ÈÈç$\sigma$Ö»ÊÇÒ»¸ö±êÁ¿£¿´ğ£ºÊÇÖğÏñËØµÄ£¨2Î¬£©£¬Ò²¿ÉÉèÖÃÎª3Î¬µÄ¡£PagÖĞÁ½¸ö¾ØÕóÔõÃ´×ö³Ë·¨µÄ£¿ÏÈ¶¼Ó³Éäµ½Éè¶¨ºÃµÄembedÎ¬¶È£¬ÔÙÖğµã
+## 20.SFNet-Lite: Faster, Accurate, and Domain Agnostic Semantic Segmentation via Semantic Flow(2022)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2207.04415)
+
+ÔÚÔ­SFNetµÄ»ù´¡ÉÏ½øÒ»²½ÓÅ»¯£¬Ìá³öÁË¸üºÃµÄÈÚºÏ²»Í¬³ß¶ÈÌØÕ÷µÄÄ£¿éGD-FAM
+- Ö÷¸ÉÍøÂçÊ¹ÓÃÁË×îĞÂµÄSTDC
+- ½«FAMÓÅ»¯ÎªGD-FAM£¬ÒıÈëÃÅ¿Ø¡£¼ÆËã³öÁ÷³¡(H\*W\*4,Î¬¶È·­±¶)ºó£¬·Ö±ğwarpÁ½±ßµÄÌØÕ÷Í¼¡£½«¾­1\*1¾í»ıºóµÄÔ­ÌØÕ÷Í¼È¡×î´ó³Ø»¯ºÍÆ½¾ù³Ø»¯ÎªÌØÕ÷£¬Êä³öÃÅ¿ØÍ¼£¨Ã¿¸öÏñËØµãÒ»¸ö[0,1]µÄÖµ£©£¬À´¼ÓÈ¨Á½¸ö³ß´çÌØÕ÷Í¼µÄÈÚºÏ¡£
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/27.png)
+- ½âÂëÆ÷Ö»ÁôÁËÁ½¸ö³ß´ç£¬¼õĞ¡ÁË¿ªÏú£¬ÍøÂç×îÖÕ¾«¶ÈºÍËÙ¶È¶¼ºÜ´óÓÅ»¯
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/28.png)
+- ÑµÁ·Ê±ÓÃÁËOHEM£¬Éî¶È¼à¶½£¨¸¨Öúloss£©µÈtrick
+
+
+## 21.TopFormer: Token pyramid transformer for mobile semantic segmentation(2022)
+[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_TopFormer_Token_Pyramid_Transformer_for_Mobile_Semantic_Segmentation_CVPR_2022_paper.pdf)
+
+½áºÏCNNºÍtransformer£¬Ìá³öÇáÁ¿¼¶·Ö¸î¼Ü¹¹TopFormer¡£
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/29.png)
+
+- ÏÈÊ¹ÓÃ¼¶ÁªµÄmobilenet¿éÉú³É²ã´ÎÌØÕ÷Í¼£¬¿ìËÙÏÂ²ÉÑùºÍtoken½ğ×ÖËş¡£ÏÂ²ÉÑùµ½Í³Ò»³ß´çºóÁ¬½Ó×÷ÎªtransformerµÄÊäÈë£¬´Ó¶ø´ó´ó¼õĞ¡ÊäÈëtokenµÄÊıÁ¿£¬¼õĞ¡ÁË¿ªÏú¡£
+- CNNµÄ²ã´Î½á¹¹ºó£¬½«²»Í¬³ß¶ÈµÄÌØÕ÷½áºÏ£¬¾­¹ıtransformer£¨ÄÚº¬²Ğ²îÁ¬½Ó£©£¬»áÉú³Éscale-awareµÄÌØÕ÷¡£º¬·á¸»ÓïÒåĞÅÏ¢µÄÊä³ö°´³ß´ç£¬¾­SIM( Semantics Injection Module)×¢ÈëÓïÒåĞÅÏ¢µ½ÏàÓ¦token£¬×îºóÒ»ÆğÓÃÓÚÔ¤²â
+
+## 22.RTFormer: Efficient Design for Real-Time Semantic Segmentation with Transformer(2022)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2210.07124)
+
+±¾ÎÄ¸Ä½øÁËtransformerÖĞµÄ×Ô×¢ÒâÁ¦£¬Ò»·½Ãæ½è¼øEA(Íâ²¿×¢ÒâÁ¦)Ìá³öGFA(GPUÓÑºÃattention)£¬ÊµÏÖÏßĞÔ¸´ÔÓ¶È£»ÁíÒ»·½Ãæ£¬½öÔÚ¸ß·Ö±æÂÊÌØÕ÷Í¼ÉÏ×ö×Ô×¢ÒâÁ¦¿ÉÄÜ²»ÄÜ×îºÃµÄÌáÈ¡³¤¾à¹ØÏµ£¬ÒòÎªÃ¿¸öÎ»ÖÃµÄ¸ĞÊÜÒ²¶¼±È½ÏĞ¡£¬ÓÉ´ËÌá³öÒ»¸ö¿ç·Ö±æÂÊ×¢ÒâÁ¦Ä£¿é£¬ÊµÏÖÁËÒ»¸ö¸ßĞ§Ë«·Ö±æÂÊÍøÂçRTFormer
+- GFA:EAÖĞÓÃDouble Normalization´úÌæsoftmaxÊµÏÖ¹éÒ»»¯£¬²¢¿ÉÒÔÊµÏÖ¶àÍ·×¢ÒâÁ¦£»GFAÊ¹ÓÃÁË·Ö×éDouble Normalization£¬ÔÚµÚ¶ş²½¹éÒ»»¯Ê±·Ö×é£¬¼ä½ÓÊµÏÖ¶àÍ·µÄĞ§¹û¡£Ò»·½Ãæ£¬±ÜÃâÁË¶àÍ·£¬¼¯³ÉÁË¾ØÕó³Ë·¨£¬´Ó¶ø¶ÔGPUÓÑºÃ£¬¿ÉÒÔ½«Íâ²¿²ÎÊıµÄÎ¬¶ÈÌáÉıµ½M\*H£¬¿ÉÑ§Ï°µÄÄÜÁ¦ÌáÉıÁË£»ÁíÒ»·½Ãæ£¬·Ö×éDouble Normalization±£³ÖÁË¶àÍ·µÄÓÅÊÆ
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/30.png)
+- ÒıÈëÁË¿ç·Ö±æÂÊ×¢ÒâÁ¦Ä£¿é£¬½»²æ·Ö±æÂÊ×¢ÒâÁ¦Í¨¹ı´«²¥´ÓµÍ·Ö±æÂÊ·ÖÖ§ÖĞÑ§µ½µÄ¸ß¼¶ÖªÊ¶À´¸üÓĞĞ§µØÊÕ¼¯¸ß·Ö±æÂÊ·ÖÖ§µÄÈ«¾ÖÉÏÏÂÎÄĞÅÏ¢¡£
+- Ö÷¸ÉÍøÂçÖĞ»¹ÀûÓÃÁËDDRNetÖĞµÄDAPPM×÷ÎªÉÏÏÂÎÄÄ£¿é
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/31.png)
+## 23.FFNet:Simple and Efficient Architectures for Semantic Segmentation(2022)
+[ÂÛÎÄÁ´½Ó](https://openaccess.thecvf.com/content/CVPR2022W/ECV/papers/Mehta_Simple_and_Efficient_Architectures_for_Semantic_Segmentation_CVPRW_2022_paper.pdf)
+
+±¾ÎÄÈÏÎªÄ¿Ç°µÄsotaÄ£ĞÍÉè¼ÆÌ«¸´ÔÓÁË£¬¶Ô¼ÓËÙ²»ÓÑºÃ£¬Ìá³öÁËÒ»¸ö¼«¼òµÄ»ùÓÚ¼òµ¥encoder-decoderºÍFPNµÄÒÔResNetÀàËÆÎªbackboneµÄFFNet¡£×÷ÕßÈÏÎª£¬¸ü¼òµ¥µÄCNN¼Ü¹¹ÔÚÓïÒå·Ö¸îºÍÆäËûÈÎÎñ·½ÃæÓĞ×Å¸ü´óµÄÇ±Á¦
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/32.png)
+
+ÍøÂç±È½ÏÏÔÈ»£¬stem¾ÍÊÇFPNÇ°µÄ¶«Î÷£¨±ÈÈçÒ»Á½¸ö¾í»ı²ã£©£¬FFNetµÄÒ»´óÁé»îĞÔÔÚÓÚÆäÍ¨ÓÃĞÔ£ºFFNet¼Ü¹¹¿ÉÒÔ×ÔÓÉ¸ü¸ÄÍøÂçbackboneµÄÀàĞÍ¡¢¿í¶ÈºÍÉî¶È£¬ÌØÕ÷³ß´ç´óĞ¡£¬headµÄÀàĞÍºÍhead¿í¶È
+
+## 24.DWRSeg: Dilation-wise Residual Network for Real-time Semantic Segmentation(2022)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2212.01173)
+
+±¾ÎÄÈÏÎªÑ¡ÔñºÏÊÊµÄ¸ĞÊÜÒ°´óĞ¡¶ÔÌáÈ¡ÌØÕ÷µÄĞ§ÂÊºÜÖØÒª£¬ÔÚÇ³²ãĞèÒª½ÏĞ¡µÄ¸ĞÊÜÒ°À´²¶×½¾Ö²¿ÌØÕ÷£¬¶ø¸ß²ãĞèÒª¸ü´óµÄ¸ĞÊÜÒ°²¶×½ÓïÒåÌØÕ÷£»²¢ÇÒ£¬ÔÚ¸ß²ãÊ¹ÓÃÀ©ÕÅÂÊ´óµÄ¿Õ¶´¾í»ıÃ»ÓĞÒâÒå£¬ÒòÎª¾í»ı¼¸ºõ²»¿ÉÄÜÔÚºÜ´óµÄ¿Õ¼äÎ¬¶ÈÉÏ½¨Á¢ÌØÕ÷Ö®¼äµÄÁªÏµ¡£Òò´Ë£¬±¾ÎÄÕë¶Ô¸ĞÊÜÒ°Éè¼ÆÁËËæÍøÂçÉî¶È±ä»¯µÄblock£¬Ç³²ãÓÃSIR£¨¼ò»¯µÄ·´×ªÆ¿¾±²Ğ²î¿é£©£¬¸ß²ãÓÃDWR
+- SIR£º¼´½«·´×ªÆ¿¾±¿éÈ¥µôÒ»¸ö1\*1£¬ÔÚµÍ²ãÊ¹ÓÃSIR£¬Ê¹¸ĞÊÜÒ°»ºÂı±ä´ó£¬¼õÉÙÏ¸½ÚËğÊ§£¬¸üÆ½»¬
+- DWR:¶àÂ·¾¶block£¬·Ö±ğÊ¹ÓÃ²»Í¨¹ıµÄÀ©ÕÅÂÊ£¬»ñµÃ²»Í¬¸ĞÊÜÒ°µÄÌØÕ÷¡£ÆäÖĞ£¬×îµÍÀ©ÕÅÂÊÂ·¾¶µÄÎ¬¶ÈÊÇÁ½±¶£¬ÒòÎªĞ¡¸ĞÊÜÒ°µÄÌØÕ÷ÌáÈ¡ÔÚÃ¿Ò»²ã¶¼ºÜÖØÒª
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/33.png)
+
+- ÍøÂç½á¹¹£ºstem½«Ô­Í¼ÏÂ²ÉÑù4±¶£¬Ö®ºóÏÈ½ÓSIR£¬ÔÙ½ÓDWR£¬×îÖÕ½áºÏ¶à³ß¶ÈÌØÕ÷Í¼½øĞĞÔ¤²â
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/34.png)
+## 25.SeaFormer: Squeeze-enhanced Axial Transformer for Mobile Semantic Segmentation(2023)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2301.13156)
+
+±¾ÎÄÒ²ÊÇ¼ò»¯transformerÖĞµÄ×Ô×¢ÒâÁ¦£¬Ìá³öÒ»ÖÖÍ¨ÓÃ×¢ÒâÁ¦¿éSea attention(squeeze-enhanced Axial attention)£¬½«¸´ÔÓ¶È½µµ½O(HW)£¬ÓëÌØÕ÷Í¼´óĞ¡³ÊÏßĞÔ
+- Ó¦ÓÃÁËSea blockÌá³öÁËSeaFormer¡£Ö÷¸ÉÍøÂçÎªmobile v2¿é£¬¹²ÏíÇ°¼¸²ãµÄË«·ÖÖ§½á¹¹£¬¹ı³ÌÖĞÉÏÏÂÎÄ·ÖÖ§¶à´ÎÓë¿Õ¼ä·ÖÖ§ÈÚºÏ£¬ÓÃÓïÒåĞÅÏ¢¼ÓÈ¨¿Õ¼ä·ÖÖ§µÄÌØÕ÷Í¼¡£
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/35.png)
+- Sea block:ÓÉSea×Ô×¢ÒâÁ¦ºÍFFN×é³É
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/36.png)
+  - squeeze-enhanced Axial£¬¹ËÃûË¼Òå£¬Ñ¹ËõÎ¬¶È£¬¼ÆËãÑ¹ËõºóµÄ×Ô×¢ÒâÁ¦¡£½«Ô­Ê¼K(H\*W\*C)·Ö±ğÑØË®Æ½ºÍ´¹Ö±·½ÏòÑ¹ËõÎªH\*CºÍW\*C(È¡Æ½¾ùÖµ£¬ÎÄÖĞµÄ¹«Ê½¾ÍÊÇ±í´ïÈ¡¾ùÖµµÄÒâË¼)£¬Q/VÍ¬Àí£¬ÔÙ·Ö±ğ¼ÆËã¶àÍ·×Ô×¢ÒâÁ¦¡£ÎÄÖĞÎªÒıÈëÎ»ÖÃĞÅÏ¢£¬ÔÚÑ¹ËõºóµÄkqv·Ö±ğ¼ÓÈëÎ»ÖÃÇ¶Èë£¬ÈÃËûÖªµÀ×Ô¼ºÑØÄÄ¸ö·½ÏòÑ¹ËõµÄ£¨£¿£©
+  - ËäÈ»ÏÔÖø½µµÍ¸´ÔÓ¶È£¬µ«¶ªÊ§ÁËºÜ¶àÏ¸½ÚĞÅÏ¢£¬Òò´ËÔö¼ÓÁËDetail enhancement kernel£¬½«KQVÁ¬½ÓÆğÀ´ÊäÈëÒ»¸öÉî¶È¿É·ÖÀë3\*3ºÍ1\*1
+## 26.AFFormer:Head-Free Lightweight Semantic Segmentation with Linear Transformer(2023)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2301.04648)
+
+ÂÛÎÄÀï¸ø³öµÄ½á¹ûºÜÇ¿£¬Ìá³öÁËÒ»ÖÖÃ»ÓĞ½âÂëÍ·µÄÇáÁ¿¼¶ÓïÒå·Ö¸îÌØ¶¨¼Ü¹¹AFFormer£¬´ÓÆµÂÊµÄ½Ç¶È½âÊÍ£¬¸´ÔÓ¶ÈÎª O(n)
+
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/37.png)
+- ÎÄÖĞÍ¨¹ı¾ÛÀà½«ÌØÕ÷Í¼H\*W\*C×ªÎªÔ­ĞÍÌØÕ÷£¨3\*3¾Ö²¿µÄÈÚºÏĞÅÏ¢£©µÄÌØÕ÷Í¼h\*w\*C£¬¶ÔÔ­ĞÍÌØÕ÷Í¼Í¨¹ıPL( prototype learning)½øĞĞÌØÕ÷ÌáÈ¡£¨»ùÓÚtransformerµÄ£©£¬ÆäÖĞ×Ô×¢ÒâÁ¦±»Ìæ»»³ÉAFF£¬¸´ÔÓ¶ÈÎª$O(hwC^2)£»ÔÙ¾­¹ıPD(pixel descriptor)½«±ä»»ºóµÄÔ­ĞÍÌØÕ÷»Ö¸´ÎªH\*W\*C
+- AFF(Adaptive Frequency Filter):ÎÄÖĞÈÏÎªÈËÑÛ¶ÔÆµÂÊÂ³°ôĞÔºÜÇ¿£¬¶øÄ£ĞÍ±È½ÏÃô¸Ğ£¬ĞèÒªÔöÇ¿¶Ô¶àÖÖÆµÂÊĞÅÏ¢µÄÀûÓÃ¡£AFF°üÀ¨Èı¸öÄ£¿é
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/38.png)
+  - FSK:½«KQV·Ö×é£¬½øĞĞÒ»ÖÖattention¼ÆËã£¬Ä¿µÄÊÇÍ¨¹ı¼ÆËãÏà¹ØĞÔÔöÇ¿¶Ô·Ö¸î¸üÓĞÒæµÄÆµÂÊ
+  - DLF:µÍÍ¨ÂË²¨£¬Ê¹ÓÃµÄÊÇÆ½¾ù³Ø»¯£¬BinµÄ´óĞ¡²»Í¬£¬×îºóÒ»ÆğÉÏ²ÉÑù
+  - DHF:¸ßÍ¨ÂË²¨£¬Ê¹ÓÃµÄÊÇ¾í»ı
+- Ò»·½Ãæ£¬Ã»ÓĞdecoder´ó´ó¼õÉÙ²ÎÊı£¬ÇÒ½«attentionÓÅ»¯ÎªÏßĞÔ£¬ÇÒ½«tokenÓÉHW½µµ½hw£»ÁíÒ»·½Ãæ£¬Ìá³öµÄAFF´ÓÆµÂÊ½Ç¶ÈÑ§Ï°¾ÛÀàÔ­ĞÍµÄ¾Ö²¿ÃèÊö±íÊ¾£¬¶ø²»ÊÇÖ±½ÓÑ§Ï°ËùÓĞÏñËØÇ¶ÈëÌØÕ÷£¬Ê¹¾«¶ÈºÜÓĞ±£Ö¤
+> Ğ§¹ûÌ«ºÃÁË£¬ËµÊµ»°ºÜ¶àµØ·½Ã»Ì«¿´¶®£¬»¹µÃÈ¥¿´´úÂë£¬Õæ²»ÖªµÀÎªÊ²Ã´ÄÜÕâÃ´work¡£´úÂëÓÃmmsegmentationĞ´µÄ£¬ËùÒÔºÜ·½±ã£¡
+## 27.LETNet:Lightweight Real-time Semantic Segmentation Network with Efficient Transformer and CNN(2023)
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2302.10484)
+
+Ìá³öÁËÒ»¸ö³¬ÇáÁ¿¼¶µÄÍøÂçLETNet
+![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/39.png)
+-  Lightweight Dilated Bottleneck:Ê¹ÓÃ·Ö½â¾í»ıºÍÉî¶È¿É·ÖÀë¾í»ı£¬SE×¢ÒâÁ¦£¬×îºó»¹shuffleÁËÒ»ÏÂÍ¨µÀ
+-  efficient Transformer:ÆäÊµ¾ÍÊÇÔÚËãKQVÇ°½µÒ»ÏÂÎ¬
+-  Ìá³öÒ»¸öÌØÕ÷¼ÓÇ¿Ä£¿éFE£º·Ö±ğÔÚÍ¨µÀºÍ¿Õ¼ä·½ÏòËãSE×¢ÒâÁ¦£¨ÀàËÆµÄ£©£¬×îºó¼ÓÆğÀ´
+-  ×îºó¼ÓÁËÒ»¸öixel Attention (PA)£¬Ò²ÊÇºÍSE²î²»¶àµÄ
+
+# others
+## 1.Deformable Convolutional Networks(2017)
+
+[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1703.06211)
+
+Ìá³öÁË¿É±äĞÎ¾í»ı£¬¹Ø¼üÊÇÒÔ±ê×¼k\*k¾í»ıÌáÈ¡ÌØÕ÷Í¼£¬µÃµ½Ã¿¸öÏñËØµã2\*k\*k¸öoffset£¬À´¶Ô±ê×¼¾í»ı²ÉÑùµã½øĞĞµ÷Õû£¨Ê¹ÓÃË«ÏßĞÔ²åÖµÀ´È¡Õû£©£¬´Ó¶ø×ÔÊÊÓ¦ĞÔµØÌáÈ¡ÌØÕ÷¡£»¹Õë¶ÔÄ¿±ê¼ì²âÈÎÎñÌá³öÁË Deformable RoI PoolingºÍPosition-Sensitive (PS) RoI Pooling 
+![Alt text](backbone/image/7.png)
+
+## 2.Deformable ConvNets v2: More Deformable, Better Results(2019)
+
+[ÂÛÎÄÁ´½Ó](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Deformable_ConvNets_V2_More_Deformable_Better_Results_CVPR_2019_paper.pdf)
+
+ÔÚv1µÄ»ù´¡ÉÏÌá³öÁË Modulated Deformable Modules£¬modulatedÖ¸µÄÊÇ¶ÔÃ¿¸öÏñËØµã£¬³ıÁËÔ¤²âÁ½¸öoddset£¬»¹Ô¤²âÒ»¸ö modulation scalar£¬ÖµÔÚ[0,1]£¬ÓÃÀ´±íÊ¾¸ÃÏñËØµãµÄÖØÒª³Ì¶È¡£
 
 # Portrait segmentation
 ## 1.PortraitNet: Real-time Portrait Segmentation Network for Mobile Device(2019)
@@ -123,186 +404,3 @@ Learning for Portrait Segmentation:
 
    - ÏÈ½«preºÍGTµÄÁ¬Í¨ĞÔ×é¼şÆ¥Åä£¬ÔÙ¼ÆËãÁ¬Í¨ĞÔSC¡£loss=1-SC£¬ÓÉ¹«Ê½¿ÉÒÔ¿´³ö£¬Õâ¸öloss½«Ê¹Ä£ĞÍÇãÏòÓÚ²úÉúÊı¾İ¸üÉÙµÄÁ¬Í¨ĞÔ×é¼ş£¬²¢Ê¹Á¬Í¨ĞÔ×é¼şµÄ½»²¢±È¸ü´ó£¬ºÜÇÉÃî£¡
    - ÓĞ¸öÎÊÌâ£¬ÑµÁ·¸Õ¿ªÊ¼Ê±£¬¿ÉÄÜÃ»ÓĞ½»¼¯£¬´ËÊ±lossÎª0£¬²ÎÊı²»¸üĞÂ¡£Ã»ÓĞ½»¼¯µÄÇé¿öÊ¹ÓÃÁËÒ»ÖÖ±ğµÄloss£¬$loss=\frac{|P+G|}{|I|}$£¬¾ø¶ÔÖµÖ¸ÏñËØÊı£¬IÊÇÕûÕÅÍ¼Æ¬£¬Ê¹PºÍGµÄ²¢¼¯¼õĞ¡£¬ÇãÏòÓÚÈÚºÏ¡£
-
-
-
-
-# Real-Time Semantic Segmentation
-
-
-
-## 1.Enet: A deep neural network architecture for real-time semantic segmentation(2016)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1606.02147.pdf)
-Éè¼ÆÁËÒ»¸öÊµÊ±·Ö¸îÍøÂç£¬Ê¹ÓÃÁËºÜ¶àtrick
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/1.png)
-- ¼õÉÙÏÂ²ÉÑùºÍÉÏ²ÉÑù¹ı³ÌµÄ·Ö¸î¾«¶È¶ªÊ§£¬ÓÃsegnetµÄ·½·¨ÉÏ²ÉÑù
-- ·Ç¶Ô³ÆµÄEncoder-Decoder½á¹¹£¬½µµÍ²ÎÊıÁ¿
-- ¼¤»îº¯ÊıÊ¹ÓÃPReLU£¬¶ø·ÇReLU
-- ½«±ê×¼¾í»ı·Ö½â³ÉÁ½¸ö´ø×´¾í»ı£¬²Ğ²îÁ´½ÓµÄÁíÒ»±ß²»ÊÇºãµÈÁ¬½Ó¶øÊÇmax pool
-- Ê¹ÓÃ¿Õ¶´¾í»ı£¬ÕıÔò»¯
-- ¸Ä½øÁËbottleneckµÄ1\*1²½³¤Îª2µÄ¾í»ı£¬»»ÎªÁË2\*2µÄ£»²¢ÔÚ³Ø»¯½µµÍ³ß´çºó£¬Ê¹ÓÃ¾í»ıÌá¸ßÎ¬¶È
-## 2.Erfnet: Efficient residual factorized convnet for real-time semantic segmentation(2017)
-[ÂÛÎÄÁ´½Ó](http://www.robesafe.com/personal/roberto.arroyo/docs/Romera17tits.pdf)
-
-EnetËäÈ»²ÎÊıĞ¡£¬µ«¾«¶ÈÌ«²î¡£±¾ÎÄ¸Ä½ø²Ğ²î¿ì£¬Ìá³öerfnet
-
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/2.png)
-- Ô­resnetÌá³öÁ½ÖÖ²Ğ²î¿é£¬¶øÕâ²ÎÊıºÍ¾«¶ÈÀàËÆ¡£bottleneckÀàĞÍ(b)ÒòËæÉî¶ÈÔö¼Ó£¬¼ÆËã³É±¾¸üĞ¡¶ø¹ã±»Ê¹ÓÃ£»¶øÒ»Ğ©ÂÛÎÄÖĞÌáµ½£¬ËæÉî¶ÈÔö¼Ó£¬(a)Àà×¼È·ĞÔ¸ü¸ß¡£
-- Enet¸Ä½øÁË(b)Àà£¬±¾ÎÄ¸Ä½ø(a)ÀàÀ´Ìá¸ß¾«¶È¡£ËüÌá³öÁËfactorized residual layers·Ö½â¾í»ı£¬ÊÇ±ê×¼¾í»ıµÄ¡°µÍÖÈ½üËÆ¡±
-
-
-## 3.ShelfNet for Fast Semantic Segmentation(2018)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1811.11254v6.pdf)
-shelfnetÖĞÓĞ¶à¸öencoder-decoder¶Ô£¬Ìá¸ßÁË¾«¶È£¬²¢Í¨¹ı½µµÍÍ¨µÀÊıÀ´¼õĞ¡¼ÆËã¸ºµ£
-
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/3.png)
-
-- 2£¬4Ïàµ±ÓÚdecoder£¬0¡¢3Ïàµ±ÓÚencoder¡£1µÄ1\*1¾í»ı½«CNNÌáÈ¡µÄÌØÕ÷Í¼½µÎ¬4±¶
-- ÎªÊ²Ã´Ğ§¹ûºÃ£¿×÷ÕßÈÏÎª£¬shelfnetÏàµ±ÓÚ¶à¸öFCNµÄ¼¯³É£¬ÌØÕ÷Í¼³ß´çÓĞ4ÖÖµÄsegnetÏàµ±ÓÚ4¸öFCN£¬¶øShelfnetÏàµ±ÓÚ29¸ö£¨Ó¦¸ÃÊÇ×éºÏÊıÑ§µÄÖªÊ¶£©£»²¢ÇÒ£¬shelfnetÏàµ±ÓÚdeepºÍshallowÂ·¾¶µÄ¼¯³É
-- S-BlockÖĞµÄÁ½¸ö3\*3¾í»ı¹²ÏíÈ¨ÖØ£¬×÷ÕßËµ½è¼øÁËRNN£¬²¢ÇÒBN²ãÊÇ²»Í¬µÄ£¬ÔÚ²»½µµÍ¾«¶ÈµÄÍ¬Ê±´ó´ó¼õÉÙ²ÎÊı
-## 4.Contextnet: Exploring context and detail for semantic segmentation in real-time(2018)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1805.04554)
-## 4.Espnet: Efficient spatial pyramid of dilated convolutions for semantic segmentation(2018)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_ECCV_2018/papers/Sachin_Mehta_ESPNet_Efficient_Spatial_ECCV_2018_paper.pdf)
-
-## 5.Espnetv2: A light-weight, power efficient, and general purpose convolutional neural network(2019)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2019/papers/Mehta_ESPNetv2_A_Light-Weight_Power_Efficient_and_General_Purpose_Convolutional_Neural_CVPR_2019_paper.pdf)
-
-## 4.Fast-scnn: Fast semantic segmentation network(2019)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1902.04502)
-
-±¾ÎÄÌá³öµÄFast-SCNN½è¼øÁËencoder-decoderºÍË«·ÖÖ§½á¹¹
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/4.png)
-- ÏÈÓÃ¼¸²ã¾í»ıÀ´ÏÂ²ÉÑù(learning to downsample)£¬±È½ÏÇ³£¬Ïàµ±ÓÚË«·ÖÖ§½á¹¹ÀïµÄ¿Õ¼ä·ÖÖ§
-- globla feature extractorÀûÓÃ¼¶ÁªµÄinverted bottleneckºÍPPM£¬ÌáÈ¡È«¾ÖÌØÕ÷£¬Ïàµ±ÓÚÉÏÏÂÎÄ·ÖÖ§
-- FFM½«Á½¸ö·ÖÖ§µÄÌØÕ÷ÈÚºÏÆğÀ´£¬Õû¸ö¹ı³ÌÏàµ±ÓÚÁ½¸ö·ÖÖ§¹²ÏíÇ°¼¸²ãµÄ¼ÆËã.FFMÏàµ±ÓÚÒ»¸öskipÁ¬½Ó£¬encoder-decoder½á¹¹¡£
-
-## 5.swiftnetRN:In defense of pre-trained imagenet architectures for real-time semantic segmentation of road-driving images(2019)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2019/papers/Orsic_In_Defense_of_Pre-Trained_ImageNet_Architectures_for_Real-Time_Semantic_Segmentation_CVPR_2019_paper.pdf)
-
-±¾ÎÄÈÏÎª£¬ÀûÓÃÇáÁ¿¼¶µÄÍ¨ÓÃÓïÒå·Ö¸îÄ£ĞÍ+ºáÏòÁ¬½Ó+¼òµ¥µÄ½âÂëÆ÷¿ÉÒÔÊµÏÖĞ§¹ûºÍĞ§ÂÊµÄ¾ùºâ¡£Ö®Ç°µÄĞí¶àÊµÊ±·Ö¸îÄ£ĞÍÈÏÎªÔ¤ÑµÁ·Ã»ÓÃ£¬±¾ÎÄÖ¤Ã÷ÁËÆä×÷ÓÃ
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/5.png)
-
-ÑµÁ·Ê±Ê¹ÓÃimage½ğ×ÖËş£¬encoder¹²ÏíÈ¨ÖØ£¬Í¨¹ı½ğ×ÖËşÈÚºÏºÍSPPÊµÏÖÀ©´ó¸ĞÊÜÒ°
-## 6.Dfanet: Deep feature aggregation for real-time semantic segmentation(2019)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_DFANet_Deep_Feature_Aggregation_for_Real-Time_Semantic_Segmentation_CVPR_2019_paper.pdf)
-
-
-## 7.MSFNet:Real-time semantic segmentation via multiply spatial fusion network(2019)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1911.07217)
-½µµÍÍøÂçÉî¶È»á½µµÍ¸ĞÊÜÒ°£¬½µµÍÍ¨µÀÊı»áÏŞÖÆÌØÕ÷±íÊ¾¿Õ¼ä£¬Òò´ËÏ£Íû¿ÉÒÔÀ©´ó¸ĞÊÜÒ°£¬¶øÇÒ¿ÉÒÔ»Ö¸´¿Õ¼äËğÊ§
-
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/6.png)
-
-- Multi-features Fusion Module£ºÒ»¸öÇáÁ¿¸ßĞ§µÄÍøÂç£¬Í¨¹ıSAP(Spatial Aware Pooling),ÔÚÃ¿¸ö¸ĞÊÜÒ°¼¶±ğ¶¼ÓĞºÜºÃµÄ¿Õ¼äĞÅÏ¢»Ö¸´£¬²¢ÇÒ½«²»Í¬¸ĞÊÜÒ°²ã´Î£¨²»Í¬²Ğ²î¿é£©ÏàÍ¬·Ö±æÂÊµÄÌØÕ÷ÈÚºÏÆğÀ´£¬²¢ÇÒÔÚ²»Ôö¼Ó¼ÆËã³É±¾µÄÇé¿öÏÂ´ó´óÌá¸ßÁËĞÔÄÜ
-- Ìá³öÁËĞÂµÄClass Boundary SupervisionÈÎÎñ£¬¶ÔMFMÊÕ¼¯µ½µÄÌØÕ÷½øĞĞÁ½¸ö²¢ĞĞ¶ÀÁ¢µÄ¿ìËÙÉÏ²ÉÑù£¬ÆäÖĞÒ»¸öÓÃÀ´ÓĞ¼à¶½µÄ×ö±ß½çÔ¤²â£¬×îÖÕlossÊÇ¼ÓÈ¨ºÍ
-
-
-## 8.CGNet: A Light-weight Context Guided Network for Semantic Segmentation(2020)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1811.08201)
-
-±¾ÎÄÖ¼ÔÚ²¶»ñËùÓĞ½×¶ÎµÄÉÏÏÂÎÄÌØÕ÷£¬×¨Îª·Ö¸îÉè¼ÆµÄÍøÂç£¬Ìá³öGC block£¬½ø¶øÒÔÆäÎªÖ÷¸ÉÌá³öGCNet
-
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/7.png)
-- CG blockÖĞ£¬locÌáÈ¡¾Ö²¿ÌØÕ÷£¬surÌáÈ¡ÉÏÏÂÎÄÌØÕ÷£¬joi½«Á½²¿·ÖÌØÕ÷Æ´ÆğÀ´£¬glo½è¼øseÈÚºÏÈ«¾ÖÌØÕ÷£¬´Ó¶øÊµÏÖÔÚÃ¿¸ö½×¶Î¶¼²¶»ñÉÏÏÂÎÄÌØÕ÷,À©Õ¹ÁËnon-localµÄ¸ÅÄî¡££¨ÆäËûÄ£ĞÍÍùÍùÔÚ±àÂë½×¶Î¹ıºó²ÅÓĞÉÏÏÂÎÄÄ£¿é£¬ÈçASPP,SPP£©
-- CG blockÖĞÖ»½øĞĞÖğÍ¨µÀ¾í»ı(depth-wise)£¬ÊµÑé±íÃ÷Èç¹û¼Ó¸ö1\*1£¬Ğ§¹û½µµÍºÜ¶à£¬¸ø³öµÄ¿ÉÄÜµÄ½âÊÍÎª"the local
-feature and the surrounding context feature need to maintain channel independence"
-
-## 9.SFNet:Semantic flow for fast and accurate scene parsing(2020)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2002.10120)
-ÎÄÖĞÈÏÎª²»Í¬²ãµÄÓïÒåÖ®¼ä´æÔÚgap£¬½è¼ø¹âÁ÷£¨Á½Ö¡Ö®¼äµÄ¶¯×÷²îÒì£¿£©£¬ÈÏÎª²»Í¬·Ö±æÂÊµÄÌØÕ÷Í¼¿É¿´×÷ÓïÒåÁ÷£¬ÎÒÃÇÍ¨¹ıÑ§Ï°Á÷³¡£¬¿ÉÒÔÍ³Ò»ÓïÒåĞÅÏ¢µÄlevel£¬¼õĞ¡ÔÚÈÚºÏ²»Í¬·Ö±æÂÊµÄÌØÕ÷Í¼Ê±¼õĞ¡ĞÅÏ¢ËğÊ§£¬Ìá³öÁË Flow Alignment Module£¬²¢½«ÆäÓ¦ÓÃµ½FPN½á¹¹ÖĞ£¬µÃµ½SFNet
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/8.png)
-- ÈÚºÏÁ½¸ö·Ö±æÂÊµÄÌØÕ÷Í¼h(¸ß·Ö±æÂÊ),lÊ±£¬ÏÈ½«lË«ÏßĞÔ²ÉÑù£¨°´ÕÕh·Ö±æÂÊµÄ±ê×¼Íø¸ñ²ÉÑù£©µ½¸ß·Ö±æÂÊ£¬ÔÙconca×÷ÎªÊäÈë£¬µÃµ½Á÷³¡£¨Ô¤²âµÄÊÇÃ¿¸öÏñËØµãµÄÆ«ÒÆ£©¡£Ê¹ÓÃÁ÷³¡ĞŞÕıh·Ö±æÂÊµÄ±ê×¼Íø¸ñ£¨²ÉÑùµãµÄÎ»ÖÃ±äÁË£©£¬ÔÙ´Î²ÉÑùlµÃµ½h·Ö±æÂÊµÄÌØÕ÷Í¼£¬ºÍÔ­hÏà¼ÓµÃµ½Êä³ö£¨ÕâÀàËÆÓÚÒ»¸ö²Ğ²î£©
-- FAMÄ£¿é¿ÉÒÔ¹ã·ºÓ¦ÓÃµ½ÈÚºÏ²»Í¬·Ö±æÂÊÌØÕ÷µÄÄ£¿éÖĞ
-- ÔÚÖ÷¸ÉµÄFPNÍøÂçÖĞ£¬Ëû»¹½«top-downÂ·¾¶ÖĞµÄ¸÷ÌØÕ÷Í¼Í³Ò»µ½×îÖÕµÄÌØÕ÷Í¼ÖĞ£¬Ò»Æğ½øĞĞÔ¤²â
-- Õû¸öFAMÖ»ÓÃµ½¼¸¸ö1\*1ºÍ3\*3£¬ÆäËû¶¼ÊÇÎŞĞèÑ§Ï°µÄ±ä»»£¬²ÎÊıÁ¿ºÜĞ¡
-
-## 10.Real-time semantic segmentation with fast attention(2020)
-[ÂÛÎÄÁ´½Ó](https://ieeexplore.ieee.org/ielaam/7083369/9223766/9265219-aam.pdf)
-
-## 11.RegSeg:Rethink dilated convolution for real-time semantic segmentation(2021)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2111.09957)
-
-Ö÷¸ÉÍøÂçÃ»ÓĞÊÓÒ°£¬ÌáÈ¡ÌØÕ÷²»ºÃ£¬±¾ÎÄÌá³öÒ»ÖÖdilate block(D block)£¬²¢Í¨¹ı¼¶ÁªD blockµÃµ½RegSeg.
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/9.png)
- - D blockÀûÓÃÁË·Ö×é¾í»ıÀ´¼ÓËÙ£¬½è¼øÁËSEÄ£¿é£¬Ê¹ÓÃÁË²»Í¬ÅòÕÍÂÊµÄ¿Õ¶´¾í»ı£¬ÆäÖĞÍùÍù½«Ò»¸ögroupµÄÀ©ÕÅÂÊÉèÎª1£¬´Ó¶øÔÚÀ©´ó¸ĞÊÜÒ°µÄÍ¬Ê±±£Áô¾Ö²¿ĞÅÏ¢
- - Ö÷¸É±àÂëÆ÷¾ÍÊÇD blockµÄ¶Ñµş£¬²½³¤Îª2µÄD blockÓĞÒ»µã²î±ğ
-## 12.STDC:Rethinking BiSeNet For Real-time Semantic Segmentation(2021)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content/CVPR2021/papers/Fan_Rethinking_BiSeNet_for_Real-Time_Semantic_Segmentation_CVPR_2021_paper.pdf)
-
-ÓÅ»¯BisenetµÄË«Â·¾¶×¢ÒâÁ¦µÄÈßÓà£¬Ìá³öÁËÏ¸½Ú·ÖÖ§£¨¿ÉÒÔÓ¦ÓÃµ½ËùÓĞ¿ò¼ÜÖĞ£¬Ö»ÔÚÑµÁ·Ê¹ÓÃ£¬Ëã¸ö¸¨ÖúÈÎÎñ£©
-- Ê×ÏÈÊÇSTDC(Short-Term Dense Concatenate Module)¿é
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/10.png)  
-ÉÏÍ¼Îª²½³¤Îª1µÄSTDC¿é£¬½«ÊäÈëÊäÈë¼¶ÁªµÄblock£¬ÔÚÕâ¸ö¹ı³ÌÖĞ»ñµÃ²»Í¬³ß¶ÈµÄ¸ĞÊÜÒ°£¬²¢ÇÒÎ¬¶È²»¶Ï½µµÍ£¨ÒòÎªÓïÒåĞÅÏ¢¸ü¼¯ÖĞ£©£¬²¢ÇÒ¿ÉÖ¤Ã÷£¨ÎÄÖĞÓĞ£©blockµÄÊıÁ¿¶Ô²ÎÊıµÄÓ°ÏìºÜĞ¡£¨±¾ÖÊ´ó¸ÅÊÇÒòÎªÍ¨µÀÊıÊÇÖ¸Êı¼¶µİ¼õµÄ£¬block¶àÁËÖ®ºóµÄ²ÎÊıºÜÉÙ£©£¬×îÖÕ½«²»Í¬blockµÄÌØÕ÷Í¼Á¬½ÓÆğÀ´¡£Í¨¹ıSTDC¿é£¬ÎÒÃÇµÃµ½¶à³ß¶ÈµÄÌØÕ÷£¬²¢¿ÉÒÔÍ¨¹ı¸Ä±äblockÊıÁ¿»ñµÃ¿ÉÀ©Õ¹µÄ¸ĞÊÜÒ°
-- Í¨¹ı¼¶ÁªSTDC¿é×÷ÎªÍøÂçÖ÷¸É£¬Ìá³öSTDCÍøÂç
-	![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/11.png)  
-  Ã¿¸östageÏÂ²ÉÑùÁ½±¶£¬stage 1&2ÓÉÒ»¸ö¾í»ı¿é×é³É£¬ºóÃæ¶¼ÓÉ1¸ö²½³¤Îª2µÄSTDC¿éºÍN¸ö²½³¤Îª1µÄ×é³É¡£½«stage3µÄÊä³ö×÷Îª¿Õ¼ä·ÖÖ§£¬½«stage4&5µÄÊä³öºÍ×îºóµÄÈ«¾Ö³Ø»¯½á¹û×÷ÎªÉÏÏÂÎÄ·ÖÖ§£¬½ÓÈëARM(ºÍSEÏàËÆ)£¬×îÖÕ½«Á½ÌõÂ·¾¶µÄÌØÕ÷½ÓÈëFFM(Ò²ºÍSEÏàËÆ)
-- ÔÚÑµÁ·Ê±ÒıÈë¸¨ÖúÈÎÎñ£¬ÔÚ²âÊÔÊ±²»ÓÃ£¬Òò´ËÔÚÊµÊ±·Ö¸îÖĞ¿É·º»¯¡£½«¿Õ¼ä·ÖÖ§µÄ½á¹û½ÓÈëdetail head£¬½«Êä³öÓëÏ¸½ÚGT×ö¶şÔª½»²æìØ£¬Ï¸½ÚGTÓÉ²½³¤²»Í¬µÄÀ­ÆÕÀ­Ë¹¾í»ıºË+¿ÉÑ§Ï°µÄ1\*1¾í»ı£¬²¢È¡ãĞÖµµÃµ½GTÏ¸½ÚÍ¼£¬GTÏ¸½ÚÍ¼ºÍÔ¤²âÊ¹ÓÃÁË¶şÔª½»²æìØºÍDiceµÄÁªºÏËğÊ§£¨Ï¸½ÚËùÕ¼µÄ±ÈÀı½ÏÏ¸Ğ¡£©¡£Ô­ÀíÎÒÈÏÎªÊÇ£¬À­ÆÕÀ­Ë¹¾í»ıºËÊÇÒ»ÖÖ¿ÉÒÔÌáÈ¡±ßÔµĞÅÏ¢µÄ¾í»ıºË£¬¿ÉÒÔÕÒµ½Í»±ä£¬´ÓÍ¼ĞÎ»¯½Ç¶È¡£
-## 13.DDRNet:Deep dual-resolution networks for real-time and accurate semantic segmentation of road scenes(2021)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2101.06085)
-
-±¾ÎÄÓÅ»¯ÁËË«±ß½á¹¹£¬Ìá³öÒ»¸öĞÂµÄÖ÷¸ÉÍøÂçDDRNet£¬³ıÁË¹²ÏíÇ°¼¸²ãÏÂ²ÉÑù£¬»¹½øĞĞÁË¶à´ÎË«±ßĞÅÏ¢ÈÚºÏ£¬²¢ÇÒÌá³öÁËÒ»¸öĞÂµÄÉÏÏÂÎÄÄ£¿éDASPP£¬²¶×½¶à³ß¶ÈÇÒÀ©´óÓĞĞ§¸ĞÊÜÒ°¡£
-- DASPP:Ê¹ÓÃ´óÄÚºËºÍ´ó²½³¤µÄ³Ø»¯£¬ÔÚµÍ·Ö±æÂÊµÄÌØÕ÷Í¼ÉÏ¼°½øĞĞ¶à³ß¶ÈµÄ³Ø»¯£¬²¢ÇÒ½«²»Í¬³ß¶ÈµÄÌØÕ÷ÈÚºÏ£¬»ñµÃ±È¹ıÈ¥SPPÄ£¿é¸üÇ¿µÄÌØÕ÷±íÕ÷¡£ÒòÎªDASPP×÷ÓÃÓÚ×îµÍ·Ö±æÂÊµÄÌØÕ÷Í¼£¬ËùÒÔÔö¼ÓµÄ¾í»ı²ã²»Ì«Ó°ÏìÍÆÀíËÙ¶È¡£
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/12.png)
-- DDRNet:¾«ĞÄÉè¼ÆÁËË«±ßĞÅÏ¢ÈÚºÏÄ£¿é£¬ÔÚÉÏÏÂÎÄ·ÖÖ§×îºóÊ¹ÓÃÁËDASPP£¬ÔÙÉÏ²ÉÑùÈÚºÏ½øĞĞÔ¤²â¡£ÑµÁ·Ê±ÒıÈë¸¨Öúloss¡£×îÖÕĞ§¹ûºÜºÃ¡£
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/13.png)
-
-## 14.Pp-liteseg: A superior real-time semantic segmentation model(2022)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2204.02681)
-Ìá³öÁË¼¸¸öĞÂµÄÄ£¿é£¬Ò»¸öÌØÕ÷ÈÚºÏÄ£¿éUnified Attention Fusion Module£¬Ò»¸ö¾ÛºÏÈ«¾ÖÉÏÏÂÎÄĞÅÏ¢µÄSimple Pyramid Pooling Module£¨¼ò»¯ÁËSPP£©£¬µÃµ½Ò»¸öĞÂÍøÂçPp-liteseg
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/14.png)
-- UAFM£ºÀûÓÃ¿Õ¼ä×¢ÒâÁ¦£¨ÑØÍ¨µÀ×ö¾ùÖµºÍmax£¬¶Ô4\*H\*W×ö±ä»»µÃµ½H\*WµÄ·ÖÊı$\alpha$£©ºÍÍ¨µÀ×¢ÒâÁ¦£¨¶ÔÌØÕ÷Í¼×ö×î´ó³Ø»¯ºÍÆ½¾ù³Ø»¯£¬×ö±ä»»µÃµ½CÎ¬·ÖÊı$\alpha$£©ÔöÇ¿ÌØÕ÷±íÊ¾£¬ÓÃ$\alpha$¼ÓÈ¨µÃµ½$out=\alpha up+(1-\alpha)high$£¬ºÍÒ»°ãÒâÒåµÄ×¢ÒâÁ¦²»Ò»Ñù
-![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/%E5%AE%9E%E6%97%B6/imahe/15.png)
-- SPPM:¼ò»¯ÁËSPP£¬¼õĞ¡¹ı³ÌÖĞºÍÊä³öµÄÍ¨µÀÊı£¬¼õÉÙ·ÖÖ§Êı£¬É¾È¥shortcut(²Ğ²îÁ¬½Ó)£¬½«Á¬½Ó»»ÎªÏà¼Ó
-- Flexible and Lightweight Decoder,ÆäÊµ¾ÍÊÇËæ×Å½âÂë½µµÍÎ¬¶È
-## 15.PIDNet: A Real-time Semantic Segmentation Network Inspired from PID Controller(2022)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2206.02066.pdf?trk=public_post_comment-text)
-
-## SFNet: Faster, Accurate, and Domain Agnostic Semantic Segmentation via Semantic Flow(2022)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2207.04415)
-
-## 16.DWRSeg: Dilation-wise Residual Network for Real-time Semantic Segmentation(2022)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2212.01173)
-
-## 17.LETNet:Lightweight Real-time Semantic Segmentation Network with Efficient Transformer and CNN(2023)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2302.10484)
-
-# Semantic segmentation
-## 1.ISANet:Interlaced Sparse Self-Attention for Semantic Segmentation()
-Ocnet: Object context network for scene parsing,
-## 2.FastFCN: Rethinking Dilated Convolution in the Backbone for Semantic Segmentation(2019)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1903.11816)
-
-## 3.Adaptive pyramid context network for semantic segmentation(2019)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Adaptive_Pyramid_Context_Network_for_Semantic_Segmentation_CVPR_2019_paper.pdf)
-
-## 4.Expectation-maximization attention networks for semantic segmentation(2019)
-[ÂÛÎÄÁ´½Ó](https://openaccess.thecvf.com/content_ICCV_2019/papers/Li_Expectation-Maximization_Attention_Networks_for_Semantic_Segmentation_ICCV_2019_paper.pdf)
-
-Denseaspp for semantic segmentation in street scenes
-## 5.Dynamic Multi-scale Filters for Semantic Segmentation(2019)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content_ICCV_2019/papers/He_Dynamic_Multi-Scale_Filters_for_Semantic_Segmentation_ICCV_2019_paper.pdf)
-
-## 6.DNLNet:Disentangled non-local neural networks(2020)
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/2006.06668)
-
-## 7.MaskFormer: Per-Pixel Classification is Not All You Need for Semantic Segmentation(2021)
-[ÂÛÎÄÁ´½Ó](https://proceedings.neurips.cc/paper/2021/file/950a4152c2b4aa3ad78bdd6b366cc179-Paper.pdf)
-
-
-## 8.Mask2Former:Masked-attention mask transformer for universal image segmentation(2022)
-[ÂÛÎÄÁ´½Ó](http://openaccess.thecvf.com/content/CVPR2022/papers/Cheng_Masked-Attention_Mask_Transformer_for_Universal_Image_Segmentation_CVPR_2022_paper.pdf)
-# others
-## 1.Deformable Convolutional Networks(2017)
-
-[ÂÛÎÄÁ´½Ó](https://arxiv.org/pdf/1703.06211)
-
-Ìá³öÁË¿É±äĞÎ¾í»ı£¬¹Ø¼üÊÇÒÔ±ê×¼k\*k¾í»ıÌáÈ¡ÌØÕ÷Í¼£¬µÃµ½Ã¿¸öÏñËØµã2\*k\*k¸öoffset£¬À´¶Ô±ê×¼¾í»ı²ÉÑùµã½øĞĞµ÷Õû£¨Ê¹ÓÃË«ÏßĞÔ²åÖµÀ´È¡Õû£©£¬´Ó¶ø×ÔÊÊÓ¦ĞÔµØÌáÈ¡ÌØÕ÷¡£»¹Õë¶ÔÄ¿±ê¼ì²âÈÎÎñÌá³öÁË Deformable RoI PoolingºÍPosition-Sensitive (PS) RoI Pooling 
-![Alt text](backbone/image/7.png)
-
-## 2.Deformable ConvNets v2: More Deformable, Better Results(2019)
-
-[ÂÛÎÄÁ´½Ó](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Deformable_ConvNets_V2_More_Deformable_Better_Results_CVPR_2019_paper.pdf)
-
-ÔÚv1µÄ»ù´¡ÉÏÌá³öÁË Modulated Deformable Modules£¬modulatedÖ¸µÄÊÇ¶ÔÃ¿¸öÏñËØµã£¬³ıÁËÔ¤²âÁ½¸öoddset£¬»¹Ô¤²âÒ»¸ö modulation scalar£¬ÖµÔÚ[0,1]£¬ÓÃÀ´±íÊ¾¸ÃÏñËØµãµÄÖØÒª³Ì¶È¡£
-
