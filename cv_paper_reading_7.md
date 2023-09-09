@@ -1,6 +1,6 @@
 # Semi-supervised semantic segmentation
-## 1.Guided Collaborative Training for Pixel-wise Semi-Supervised Learning(2020)
-±¾ÎÄÌá³öÁËÒ»ÖÖÊÊÓÃÓÚÖðÏñËØÈÎÎñµÄSSL¿ò¼ÜGCL£¬ÀàËÆÓÚGAN¡£
+## 1.Guided Collaborative Training for Pixel-wise Semi-Supervised Learning(2020 eccv)
+±¾ÎÄÌá³öÁËÒ»ÖÖÊÊÓÃÓÚÖðÏñËØÈÎÎñµÄSSL¿ò¼ÜGCL£¬Ò»ÖÂÐÔÑµÁ·£¬ÑµÁ·¹ý³ÌÀàËÆÓÚGAN¡£
 
 ![Alt text](%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/21.png)
 
@@ -10,3 +10,78 @@ T1ºÍT2ÎªÈÎÎñÄ£ÐÍ£¨task specific£©£¬¾ßÓÐ²»Í¬µÄ³õÊ¼»¯£¬Êä³öT1(x)ºÍT2(x)µÄÄ¿±êÎª±ê×
   - Dynamic Consistency Constraint£¬ÀàËÆÓÚÎ±±êÇ©·½·¨£¬¼¯³ÉÁ½¸öÈÎÎñÄ£ÐÍµÄÖªÊ¶¡£ÉèÖÃÒ»¸öãÐÖµ$\xi$£¬½«FÊä³öµÄÈ±ÏÝ¸ÅÂÊÍ¼ÖÐ¸ÅÂÊ´óÓÚ$\xi$µÄÏñËØµãÖÃ1¡£ÔÙÒÔT1ÎªÀý£¬ÈôFÊä³öµÄÈ±ÏÝ¸ÅÂÊÍ¼ÖÐ£¬Ä³ÏñËØT1È±ÏÝ¸ÅÂÊ´óÓÚT2£¬ÔòÒÔT2µÄÖµÎª¡°Î±±êÇ©¡±£¬ÓÃMSE¼ÆËãT1ËðÊ§¡£T2Í¬Àí¡£
   - Flaw Correction Constraint£¬Ï£ÍûTkµÄÊä³öÊ¹FµÄÊä³öÇ÷ÏòÓÚ0¡£ÈôÄ³ÏñËØµãÔÚT1ºÍT2ÖÐµÄÈ±ÏÝ¸ÅÂÊ¶¼´óÓÚ$\xi$£¬ÔòÓÃMSEÒÔ0ÎªÄ¿±ê¼ÆËãFÊä³öµÄËðÊ§£¨FÎª¹Ì¶¨µÄ£©¡£
 - ÑµÁ·µÄµÚ¶þ½×¶Î£º¹Ì¶¨Tk£¬ÑµÁ·F¡£Ï£Íû¼ì²âÆ÷FµÄÊä³öÇ÷Ïò|Tk-y|£¬µ«ºóÕßÍ¨³£Ï¡ÊèÇÒsharp£¬½ÏÄÑÑ§Ï°¡£Òò´Ë£¬ÎÒÃÇ½«|Tk-y|ÊäÈëC£¬ÅòÕÍ+Ä£ºý+ÕýÔò»¯£¬½«Êä³ö×÷ÎªFµÄÕæÖµ£¬ÓÃMSEÑµÁ·¡£
+
+## 2. Mean teachers are better role models:Weight-averaged consistency targets improve semi-supervised deep learning results(2018 nips)
+±¾ÎÄÊÇ°ë¼à¶½Ñ§Ï°µÄ¡°Ò»ÖÂÐÔÕýÔò»¯¡±·½·¨£¬¸ù¾Ý¾ÛÀà¼ÙÉè£¨Êý¾Ý·Ö²¼ÓÉÓÉµÍÃÜ¶ÈÇøÓò·Ö¸ôµÄ¾ùÔÈÀàÑù±¾´Ø×é³É£©£¬Èç¹û¶ÔÒ»¸öÎ´±ê¼ÇµÄÊý¾ÝÓ¦ÓÃÊµ¼ÊµÄÈÅ¶¯£¬ÔòÔ¤²â²»Ó¦·¢ÉúÏÔÖø±ä»¯¡£
+
+Ê×ÏÈ»Ø¹ËÁ½ÆªÕâÀà·½·¨µÄÎÄÕÂ¡£
+
+- Temporal Ensembling for Semi-Supervised Learning(2017)£ºÌá³öPiÄ£ÐÍ¡£¶ÔÓÚÓÐ±êÇ©Êý¾Ý½øÐÐ¼à¶½Ñ§Ï°£»¶ÔÓÚÎÞ±êÇ©Êý¾Ý£¬Ã¿´Î½øÐÐÁ½´ÎÇ°ÏòÍÆÀí£¬ÓÉÓÚÊý¾ÝÔöÇ¿µÄËæ»úÐÔºÍdropout£¬ÕâÁ½¸ö½á¹û¿Ï¶¨²»Í¬£¬Ê¹ÓÃMSEËðÊ§Ô¼Êø¡£Ëæ×ÅÑµÁ·½øÐÐ£¬ÎÞ±êÇ©Êý¾ÝµÄMSEËðÊ§Õ¼µÄÈ¨ÖØ¼õÐ¡¡£
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/1.png)
+
+- Temporal Ensembling for Semi-Supervised Learning(2017)£ºÔÚ Pi-Model µÄ»ù´¡ÉÏ½øÒ»²½Ìá³öÁËTemporal Ensembling¡£Ö»½øÐÐÒ»´ÎÇ°ÏòÍÆÀí£¬½«µ±Ç°Ô¤²â½á¹ûÓëÀúÊ·Ô¤²â½á¹ûµÄÆ½¾ùÖµ×ö¾ù·½²î¼ÆËã£¬ÀúÊ·Ô¤²â½á¹ûÓÉEMA(exponential moving average£¬Ö¸Êý»¬¶¯Æ½¾ù)¼ÆËã£º$y'=\alpha y'+(1-\alpha)y$
+- 
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/2.png)
+
+Mean TeachersÔòÊÇTemporal Ensembling µÄ¸Ä½ø°æ£¬Temporal Ensembling ¶ÔÄ£ÐÍµÄÔ¤²âÖµ½øÐÐ EMA£¬ÐèÒªÔÚÑµÁ·Ê±Î¬»¤ËùÓÐÊý¾ÝµÄEMAÔ¤²âÖµ£¬¶øMean Teachers ²ÉÓÃÁË¶ÔÄ£ÐÍÈ¨ÖØ½øÐÐ EMA£¬Ã¿¸öbatch¸üÐÂ¼´¿É¡£
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/3.png)
+ÏÈ½øÐÐ¼à¶½Ñ§Ï°£¬½«Ä£ÐÍ²ÎÊý¸´ÖÆÎªÑ§ÉúºÍÀÏÊ¦Ä£ÐÍ¡£¶ÔÓÚÎÞ±êÇ©Êý¾Ý£¬·Ö±ð¼ÓÈëÔëÉùºóÊäÈëÑ§ÉúºÍÀÏÊ¦Ä£ÐÍ£¬¼ÆËãÁ½ÕßµÄMSEËðÊ§À´ÑµÁ·Ñ§ÉúÄ£ÐÍ£¬ÔÚÒ»¸öbatchÑµÁ·Íê£¨·´Ïò´«²¥Íê£©£¬Ê¹ÓÃÑ§ÉúÄ£ÐÍÈ¨ÖØ¼ÆËãÀÏÊ¦Ä£ÐÍÈ¨ÖØµÄEMA²¢¸üÐÂ¡£
+
+## 3.Semi-Supervised Semantic Image Segmentation with Self-correcting Networks(2020 cvpr)
+±¾ÎÄÃæ¶ÔµÄ³¡¾°Îª£ºÐ¡²¿·ÖÓïÒåmask±ê×¢µÄÑù±¾£¬´ó²¿·ÖÄ¿±êbbox±ê×¢¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/4.png)
+
+- Ancillary Segmentation Model:ÊäÈëÎªÍ¼Æ¬ºÍbbox(Êµ¼ÊÉÏÎªÈýÎ¬ÕÅÁ¿H\*W\*(C+1)£¬ÔÚbboxÄÚµÄÏñËØµã£¬¶ÔÓ¦µÄÀà±ðÍ¨µÀÖÃ1)£¬Êä³öÎª·Ö¸îÑÚÂëÍ¼¡£ÑµÁ·¿ªÊ¼Ê±Ê¹ÓÃÈ«±ê×¢Ñù±¾½øÐÐÑµÁ·£¬Ö®ºó±ã¹Ì¶¨²ÎÊý£¬ÔÚ³õÆÚ¶ÔÈõ¼à¶½Ñù±¾¾«¶È½Ï¸ß¡£
+- Primary segmentation model:Ö÷ÒªÄ£ÐÍ£¬ÓÐ±ê×¢Ñù±¾¼à¶½ÑµÁ·£¬ÎÞ±ê×¢Ñù±¾ÒÔSelf-correction moduleµÄÊä³öÎªÕæÖµ½øÐÐÑµÁ·¡£
+- Linear Self-Correction:ÒÔ×îÐ¡»¯Êä³ö·Ö²¼ÓëAncillary Segmentation ModelºÍPrimary segmentation modelµÄKLÉ¢¶ÈÖ®£¨¼ÓÈ¨£©ºÍÎªÄ¿±ê£¬¸Ã·Ö²¼ÓÐ½âÎö½â¡£ÑµÁ·³õÆÚ£¬Ancillary Segmentation ModelÕ¼È¨ÖØ¸ß£¬Öð½¥½µµÍ¡£
+- Convolutional Self-Correction:Ê¹ÓÃ¾í»ýÍøÂç½¨Ä£Ñ§Ï°×ÔÐ£Õý£¬½«Ç°Á½ÕßÄ£ÐÍµÄlogitÊä³öµþÆðÀ´×÷ÎªÊäÈë¡£¶ÔÓÚÓÐ±ê×¢µÄÑù±¾£¬¼à¶½ÑµÁ·Primary segmentation modelºÍConvolutional Self-Correction£¬¶ÔÓÚÎÞ±ê×¢Ñù±¾£¬ÓÃConvolutional Self-CorrectionµÄÊä³ö×÷ÎªÕæÖµËã½»²æìØËðÊ§£¨´ËËðÊ§²»´«²¥µ½Convolutional Self-Correction£©¡£³õÊ¼»¯Ê±£¬ÓÃÒ»°ëÓÐ±ê×¢Êý¾ÝÑµÁ·Ancillary Segmentation Model·ÀÖ¹¾«¶ÈÌ«¸ß£¬µ¼ÖÂConvolutional Self-CorrectionÖ»²ÉÓÃËüµÄ£¬ÁôÏÂ¸ü¶àµÄÊý¾ÝÈÃConvolutional Self-CorrectionÑ§»áÔõÃ´½áºÏAncillaryºÍprimary
+
+## 4.Semi-Supervised Semantic Segmentation with Cross-Consistency Training(2020 cvpr)
+Õë¶ÔÓïÒå·Ö¸îÈÎÎñÌá³öµÄ°ë¼à¶½·½·¨£¬Ò»ÖÂÐÔÑµÁ·¡£±¾ÎÄÈÏÎª£¬Ô­Ê¼ÊäÈëµÄ·Ö²¼Ã»ÓÐ±íÏÖ³ö·Ö¸ôÀà±ðµÄµÍÃÜ¶ÈÇøÓò£¬¶øÒþ²Ø²ã±íÊ¾¸ü·ûºÏ¾ÛÀà¼ÙÉè£¬ÊÊºÏ½øÐÐÒ»ÖÂÐÔÑµÁ·¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/5.png)
+
+- Ê×ÏÈÊÇÒ»¸ö¹²Ïí±àÂëÆ÷£¬¶¥²ã½ÓÒ»¸ömain½âÂëÆ÷ºÍ¶à¸ö¸¨Öú½âÂëÆ÷¡£ËðÊ§ÓÉÖ÷½âÂëÆ÷µÄ¼à¶½ËðÊ§ºÍÎÞ±ê¼ÇÑù±¾ËðÊ§×é³É£¬ÎÞ±ê×¢Ñù±¾¾­¹ý¹²Ïí±àÂëÆ÷ºó£¬Òþ²Ø±íÊ¾zÖ±½ÓÊäÈëÖ÷½âÂëÆ÷£¬Ôö¼ÓËæ»úÈÅ¶¯ºó·Ö±ðÊäÈë¸¨Öú½âÂëÆ÷£¬¼ÆËãÖ÷½âÂëÆ÷½á¹ûºÍ¸÷¸¨Öú½âÂëÆ÷½á¹ûµÄ½»²æìØËðÊ§¡£ÆäÖÐ£¬Ö÷½âÂëÆ÷Ö»ÓÉÓÐ±ê×¢Ñù±¾ÑµÁ·¡£
+- Ã¿¸öµü´ú²ÉÑù1£º1µÄÓÐ±ê×¢/ÎÞ±ê×¢Ñù±¾£¬ÎªÁË±ÜÃâ¹ýÄâºÏÓÐ±ê×¢Ñù±¾£¬Ê¹ÓÃÁËÀàËÆÓÚOHEMµÄ·½·¨
+- ±¾ÎÄÌá³öÁË¼¸ÖÖ²»Í¬µÄ£¬¶ÔÒþ²Ø±íÊ¾¼ÓÈëÈÅ¶¯µÄ·½·¨
+- ¸Ã¿ò¼Ü»¹¿ÉÒÔÓ¦ÓÃµ½Èõ¼à¶½ÈÎÎñ£¬ºÍ¶à¸öÓòµÄÈÎÎñ£¨ÔÚ¹²Ïí±àÂëÆ÷ºó£¬½ÓÌØ¶¨ÓÚÓòµÄÖ÷½âÂëÆ÷ºÍ¸¨Öú½âÂëÆ÷£¬¶ÔÓ¦ÓòµÄÑù±¾ÑµÁ·¶ÔÓ¦µÄ½âÂëÆ÷£©¡£
+
+## 5.Semi-supervised semantic segmentation needs strong, varied perturbations(2020 BMVC)
+±¾ÎÄÊÇ½«Ò»ÖÂÐÔÕýÔò»¯Ó¦ÓÃµ½ÓïÒå·Ö¸îµÄ×îÔçµÄ¼¸ÆªÎÄÕÂ£¬½«¼à¶½Ñ§Ï°ÖÐµÄÔöÇ¿·½·¨CutoutºÍCutMixÓ¦ÓÃµ½SSL×÷ÎªÈÅ¶¯¡£
+
+- ±¾ÎÄµÄ´ó²¿·ÖÆª·ùÔÚÀíÂÛ·ÖÎö£¬ÓëÉÏÒ»ÆªµÄË¼ÏëÀàËÆ£¬ÈÏÎª¡°Ô­Ê¼ÊäÈëµÄ·Ö²¼Ã»ÓÐ±íÏÖ³ö·Ö¸ôÀà±ðµÄµÍÃÜ¶ÈÇøÓò¡±£¬Ò»°ãµÄÒ»ÖÂÐÔÕýÔò»¯·½·¨²»ÊÊÓÃÓÚ·Ö¸îÈÎÎñ¡£µ«ÊÇÎÒÃ»´ó¿´¶®£¬·ÖÎöÁËÒ»·¬ÈÅ¶¯/¾ö²ß±ß½çÖ®ÀàµÄ¡£
+- CutOut´ó¸ÅÊÇ£¬Ëæ»úÑ¡ÊäÈëÍ¼Æ¬ÀïµÄ¾ØÐÎÇøÓò£¬ÖÃÎª0£»CutMixÊÇ£¬ÕÒÁ½ÕÅÊäÈëÍ¼Æ¬£¬ÔÚÒ»ÕÅÍ¼Æ¬ÀïÈ¡¾ØÐÎÑÚÂë£¬ºÍÁíÒ»ÕÅÍ¼µÄÆäÓà²¿·ÖÆ´ÔÚÒ»Æð£¬×÷ÎªÊäÈë£¬¼ÆËãËðÊ§Ê±µÄGTÒ²ÒªÍ¬ÑùÆ´½Ó¡£
+- ±¾ÎÄÖÐ£¬Ê¹ÓÃÁËMean TeacherµÄÊ¦Éú¿ò¼Ü£¬½«CutMixºóµÄÍ¼Æ¬×÷ÎªÑ§ÉúÍøÂçµÄÊäÈë£¬½«Ô­Í¼Æ¬ÔÚÀÏÊ¦ÍøÂçµÄÊä³öÎªÕæÖµ£¬Æ´½Óºó×÷ÎªÑ§ÉúÍøÂçµÄÎ±±êÇ©¡£
+
+## 6.ClassMix: Segmentation-Based Data Augmentation for Semi-Supervised Learning(2021 WACV)
+
+ÒÀÈ»ÊÇÒ»ÖÂÐÔÕýÔò»¯·½·¨£¬±¾ÎÄÌá³öÁËÒ»ÖÖÐÂµÄÕë¶ÔÎÞ±ê¼ÇÑù±¾µÄÊý¾ÝÔöÇ¿·½·¨Classmix¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/6.png)
+
+- Classmix£ºËæ»ú²ÉÑùÁ½ÕÅÎÞ±êÇ©ÊäÈëÍ¼Æ¬A,B£¬¶ÔAµÄÔ¤²â¸ÅÂÊÍ¼È¡argmaxºó£¬Ëæ»úÈ¡Ò»°ãÀà±ð£¬½«ÕâÐ©Àà±ð¶ÔÓ¦µÄÔ­Í¼ÏñËØµãcutÏÂÀ´£¬Õ³µ½BÉÏ£¬µÃµ½ÔöÇ¿ºóµÄÍ¼Æ¬£¬ÔöÇ¿ºóÍ¼Æ¬µÄGTÓÉA,BµÄÔ¤²â¸ÅÂÊÍ¼È¡argmaxºóÆ´½Ó¶ø³É¡£
+- ±¾ÎÄÊ¹ÓÃÁËMean teacher¿ò¼Ü£¬¶Ô½ÌÊ¦ÍøÂçµÄÈ¨ÖØ×ÜÓÃEMA¸üÐÂ¡£¶ÔÓÚA,BÏÈÓÃ½ÌÊ¦ÍøÂçÍÆÀí£¬ÓÃÔöÇ¿ºóµÄÍ¼Æ¬ÑµÁ·²¢¸üÐÂÑ§ÉúÍøÂçµÄ²ÎÊý¡£
+- Î±±êÇ©µÄË¼Ïë£¬¶ÔA,BµÄÔ¤²â¸ÅÂÊÍ¼È¡argmax£¬¹ÄÀøÍøÂçÖ´ÐÐÖÃÐÅµÄÔ¤²â£¬Ïû¼õ±ß½çµÄ²»È·¶¨ÐÔ£¬Èñ»¯£¬¼õÐ¡ÎÛÈ¾¡£
+- Ã¿´ÎÑµÁ·È¡Ò»°ëÓÐ±ê¼Ç£¬ËðÊ§º¯ÊýÓÉ¼à¶½²¿·ÖºÍÔöÇ¿²¿·Ö×é³É£¬ÔöÇ¿²¿·ÖµÄËðÊ§Õ¼µÄÈ¨ÖØÓÉ³õÆÚµÄºÜÐ¡ÂýÂý±ä´ó¡£
+
+## 7.Semi-Supervised Semantic Segmentation via Adaptive Equalization Learning (2021 NIPS)
+±¾ÎÄÕë¶ÔSSLÓïÒå·Ö¸îÖÐ±íÏÖ²»¼ÑµÄÌØ¶¨Àà±ð£¬Ìá³öÁËadaptive equalization learning (AEL)¡£¾­µäµÄÎ±±êÇ©/Ò»ÖÂÐÔÕýÔò»¯·½·¨Ô¤²â²»×¼È·£¬ÉõÖÁ¿ÉÄÜËðº¦ÕâÐ©Àà±ðµÄ±íÏÖ¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/7.png)
+
+- ±¾ÎÄÊ¹ÓÃÁËMean teacher¿ò¼Ü£¬Ìá³öÁËÁ½ÖÖÊý¾ÝÔöÇ¿·½·¨£¬À´Ôö¼Ó±íÏÖ²»¼ÑÑù±¾ÔÚÑµÁ·Åú´ÎÖÐ³öÏÖµÄÆµÂÊ¡£½ÌÊ¦Ä£ÐÍ¸ø³öÎÞ±êÇ©Ñù±¾µÄÎ±±êÇ©£¬²¢ÓÉÑ§ÉúÄ£ÐÍµÄ²ÎÊý¼ÆËãEMA¸üÐÂ£»Ñ§ÉúÄ£ÐÍ¸ø³öÑù±¾µÄÔ¤²â£¬ÆäÖÐÓÐ±ê¼ÇÑù±¾µÄÔ¤²âÓÃÀ´¼ÆËãÀà±ðµÄÖÃÐÅ¶È£¬²¢Ö¸µ¼ÎÞ±ê¼ÇÑù±¾µÄËðÊ§¼ÆËã¡£
+- Confidence Bank:ÔÚÑµÁ·¹ý³ÌÖÐ£¬Í¨¹ýÓÐ±ê¼ÇÑù±¾µÄ±íÏÖÀ´Î¬»¤Ã¿¸öÀà±ðµÄÖÃÐÅ¶È¡£ÎÄÖÐÌá³öÁË¶à¸öÖ¸±ê£¬×îÖÕ²ÉÓÃÁË$Conf^ {c} =  \frac {1}{N_ {l}}  \sum _ {i=1}^ {Nl} \frac {1}{N_ {i}^ {c}} \sum _ {i=1}^ {Nc}p_ {ij}^ {c} ,c \in {1,\cdots ,C}$£¬²¢ÇÒÔÚÃ¿´ÎÑµÁ·ºó¼ÆËãEMA¸üÐÂÃ¿¸öÀàµÄÖÃÐÅ¶È¡£
+- Adaptive CutMix:ÕâÊÇÕë¶ÔÎÞ±ê×¢Êý¾ÝµÄÊý¾ÝÔöÇ¿·½·¨£¬ÓëÔ­CutMixµÄÇø±ðÔÚÓÚ£¬Á½ÕÅÍ¼Æ¬½«°´¾ÝÀà±ðÖÃÐÅ¶ÈÀ´²ÉÑù¡£
+- Adaptive Copy-Paste:ÕâÊÇÕë¶ÔÓÐ±ê×¢Êý¾ÝµÄÊý¾ÝÔöÇ¿·½·¨£¬°´ÕÕÖÃÐÅ¶È¼ÆËã¸ÅÂÊ£¬²ÉÑùÀà±ð£¬¸´ÖÆÔ´Í¼ÏñÖÐÊôÓÚ²ÉÑùÀà±ðµÄËùÓÐÏñËØ²¢½«ËüÃÇÕ³Ìùµ½Ä¿±êÍ¼ÏñÉÏ¡£
+- Adaptive Equalization Sampling:¸ù¾ÝÖÃÐÅ¶È¼ÆËãÒ»¸öÀà±ðµÄ²ÉÑùÂÊ£¬²»ÊÇÊ¹ÓÃËùÓÐÏñËØÀ´¼ÆËãÎÞ¼à¶½ËðÊ§£¬¶øÊÇ¸ù¾ÝÏñËØµÄÔ¤²â¶ÔÏñËØËæ»ú²ÉÑùÒ»¸ö×Ó¼¯¡£
+- Dynamic Re-Weighting:Î±±êÇ©µÄÖÊÁ¿ÓÐÏÔÖøÓ°Ïì£¬±¾ÎÄÎªÎÞ±êÇ©Ñù±¾µÄÃ¿¸öÏñËØµã¼ÆËãÈ¨ÖØ£¬Ê¹ÖÃÐÅ¶È£¨´Ë´¦ÎªsoftmaxºóµÄ×î´óÖµ£©¸ßµÄÏñËØµãµÄËðÊ§¾ßÓÐ¸ü¸ßµÄÈ¨ÖØ¡£
+
+
+## 8.Semi-supervised semantic segmentation with cross pseudo supervision(2021 cvpr)
+ÔÚÂÛÎÄÀï¿´ÊÇºÜ¼òµ¥µÄÒ»ÆªÎÄÕÂ£¬Ò»ÖÂÐÔÔ¼Êø·½·¨£¬µ«ÄÜÊµÏÖSOTA£¬Ò²Ðí¾ßÌåÑµÁ·Ê±ÓÐÐ©trick¡£
+
+- Á½¸öÍøÂç£¨¿ÉÒÔÏàÍ¬»ò²»Í¬£©£¬Ëæ»ú³õÊ¼»¯¡£¶ÔÓÚÓÐ±ê¼ÇÑù±¾¼à¶½ÑµÁ·£»¶ÔÓÚÎÞ±ê¼ÇÑù±¾£¬Í¬Ê±ÊäÈëÁ½¸öÍøÂç£¨ÓÃÏàÍ¬µÄÔöÇ¿·½·¨£©£¬½«ÍøÂçÊä³öµÄ·Ö¸îÖÃÐÅÍ¼×ª»¯Îªone-hot£¬ÔÙ×÷ÎªÁíÒ»ÕÅÍ¼Æ¬Î±±êÇ©¼ÆËãËðÊ§²¢·´Ïò´«²¥¡£
+- ÎÄÖÐºÍÆäËû·½·¨½øÐÐÁË¶Ô±ÈÌÖÂÛ£¬ÎÒ¸Ð¾õ´ó¼Òtrick¶¼²î²»¶à£¬µ«ÕâÆª¼ÈÈ»ÊÇSOTA£¬ËµÃ÷ÓÐÆä¼ÛÖµ¡£
+- ÔÚ³õÆÚ»¥ÏàÎ±¼à¶½ÑµÁ·²»»áÔ½À´Ô½´íÂð£¿¼´Ê¹Á½¸öÍøÂç¶ÔÄ³¸öÏñËØµÄ·ÖÀà¶¼ÊÇ´íÎóµÄ£¬Ò²¼«´ó¸ÅÂÊÊÇÁ½¸ö£¨´íÎóµÄ£©Àà±ð£¬»¥ÏàÓÐÐ©µÖÏûÕÛÖÐ£¬¶ø·ÇÔ½ÑµÔ½´í¡£ÊµÑé±íÃ÷£¬½á¹ûÊÇÖð½¥ÌáÉýµÄ¡£
+
