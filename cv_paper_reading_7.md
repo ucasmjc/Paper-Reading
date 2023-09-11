@@ -81,7 +81,95 @@ Mean TeachersÔòÊÇTemporal Ensembling µÄ¸Ä½ø°æ£¬Temporal Ensembling ¶ÔÄ£ÐÍµÄÔ¤²âÖ
 ## 8.Semi-supervised semantic segmentation with cross pseudo supervision(2021 cvpr)
 ÔÚÂÛÎÄÀï¿´ÊÇºÜ¼òµ¥µÄÒ»ÆªÎÄÕÂ£¬Ò»ÖÂÐÔÔ¼Êø·½·¨£¬µ«ÄÜÊµÏÖSOTA£¬Ò²Ðí¾ßÌåÑµÁ·Ê±ÓÐÐ©trick¡£
 
-- Á½¸öÍøÂç£¨¿ÉÒÔÏàÍ¬»ò²»Í¬£©£¬Ëæ»ú³õÊ¼»¯¡£¶ÔÓÚÓÐ±ê¼ÇÑù±¾¼à¶½ÑµÁ·£»¶ÔÓÚÎÞ±ê¼ÇÑù±¾£¬Í¬Ê±ÊäÈëÁ½¸öÍøÂç£¨ÓÃÏàÍ¬µÄÔöÇ¿·½·¨£©£¬½«ÍøÂçÊä³öµÄ·Ö¸îÖÃÐÅÍ¼×ª»¯Îªone-hot£¬ÔÙ×÷ÎªÁíÒ»ÕÅÍ¼Æ¬Î±±êÇ©¼ÆËãËðÊ§²¢·´Ïò´«²¥¡£
+- Á½¸öÍøÂç£¨¿ÉÒÔÏàÍ¬»ò²»Í¬£©£¬Ëæ»ú³õÊ¼»¯¡£¶ÔÓÚÓÐ±ê¼ÇÑù±¾¼à¶½ÑµÁ·£»¶ÔÓÚÎÞ±ê¼ÇÑù±¾£¬Í¬Ê±ÊäÈëÁ½¸öÍøÂç£¨ÓÃÏàÍ¬µÄÔöÇ¿·½·¨£©£¬½«ÍøÂçÊä³öµÄ·Ö¸îÖÃÐÅÍ¼×ª»¯Îªone-hot£¬ÔÙ×÷ÎªÁíÒ»ÕÅÍ¼Æ¬Î±±êÇ©¼ÆËãËðÊ§²¢·´Ïò´«²¥¡£¾ßÌåµÄ£¬»¹Ê¹ÓÃÁËCutMixÔöÇ¿·½·¨¡£
 - ÎÄÖÐºÍÆäËû·½·¨½øÐÐÁË¶Ô±ÈÌÖÂÛ£¬ÎÒ¸Ð¾õ´ó¼Òtrick¶¼²î²»¶à£¬µ«ÕâÆª¼ÈÈ»ÊÇSOTA£¬ËµÃ÷ÓÐÆä¼ÛÖµ¡£
 - ÔÚ³õÆÚ»¥ÏàÎ±¼à¶½ÑµÁ·²»»áÔ½À´Ô½´íÂð£¿¼´Ê¹Á½¸öÍøÂç¶ÔÄ³¸öÏñËØµÄ·ÖÀà¶¼ÊÇ´íÎóµÄ£¬Ò²¼«´ó¸ÅÂÊÊÇÁ½¸ö£¨´íÎóµÄ£©Àà±ð£¬»¥ÏàÓÐÐ©µÖÏûÕÛÖÐ£¬¶ø·ÇÔ½ÑµÔ½´í¡£ÊµÑé±íÃ÷£¬½á¹ûÊÇÖð½¥ÌáÉýµÄ¡£
 
+## 9.Semi-supervised Semantic Segmentation with Directional Context-aware Consistency(2021 cvpr)
+ºÜÓÐÈ¤µÄË¼Â·£¬Ò²ÊÇÒ»ÖÂÐÔÔ¼ÊøµÄ·½·¨£¬¹ØÓÚÉÏÏÂÎÄµÄÒ»ÖÂÐÔ¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/8.png)
+
+- ±³¾°£ºÔÚ°ë¼à¶½»·¾³ÖÐ£¬Ä£ÐÍºÜÈÝÒ×¶ÔÏàµ±ÓÐÏÞµÄÑµÁ·Êý¾Ý½øÐÐ¹ý¶ÈÄâºÏ£¬¹ý¶ÈÒÀÀµÉÏÏÂÎÄÀ´½øÐÐÔ¤²â£¬´Ó¶øµ¼ÖÂ¶ÔÑµÁ·ÆÚ¼äÎ´¼û¹ýµÄ³¡¾°µÄ·º»¯ÄÜÁ¦½Ï²î¡£Ò»°ãµÄÈõÔöÇ¿·½·¨Ò²ÎÞ·¨ÐÎ³É¶ÔÉÏÏÂÎÄµÄÒ»ÖÂÐÔ¡£
+- Context-Aware Consistency:ÎªÁËÊµÏÖÉÏÏÂÎÄÒ»ÖÂÐÔ£¬¶ÔÓÚÎÞ±êÇ©Êý¾Ý£¬²Ã¼ô³öÁ½¸öÓÐoverlapµÄpatch×÷ÎªÊäÈë£¬ÕâÁ½¸öpatch¿É¿´×÷overlap²¿·Ö¾ßÓÐ²»Í¬ÉÏÏÂÎÄµÄÔöÇ¿·½·¨¡£ÉÏÏÂÎÄÒ»ÖÂÐÔ£¬¼´ÈÃÄ£ÐÍ¶ÔÕâÁ½¸öpatchµÄoverlap²¿·ÖÒ»ÖÂ¡£Îª±ÜÃâÄ£ÐÍÔÚ×îÖÕµÄÔ¤²âÖÐÍË»¯µ½ºöÂÔÉÏÏÂÎÄÐÅÏ¢£¬ÎÄÖÐ½«encoderÊä³öµÄÌØÕ÷¾­¹ýÓ³ÉäÆ÷µ½µÍÎ¬ÌØÕ÷ºó£¬½øÐÐÒ»ÖÂÐÔÔ¼Êø¡£
+- Directional Contrastive Loss:ÎªÁË±£Ö¤Á½¸öpatchÖØµþ²¿·ÖµÄrepresentation¶ÔÆë£¬l2ËðÊ§Ì«Èõ£¬ÎÞ·¨ÔÚ²»½«ÌØÕ÷ÍÆÀë¸ºÑù±¾µÄÇé¿öÏÂÊ¹ÌØÕ÷¾ßÓÐÇø·ÖÐÔ¡£ÎÄÖÐ½èÖú¶Ô±ÈÑ§Ï°µÄ·½·¨£¬Ìá³öDirectional Contrastive Loss£¬¼ÈÔö¼ÓÕýÑù±¾¼äµÄÏàËÆ¶È£¬ÓÖ¼õÐ¡Óë¸ºÑù±¾µÄÏàËÆ¶È¡£ËðÊ§¼ÆËãÊÇÖðÏñËØµÄ£¬Ã¿¸ö£¨ÖØµþÇøÓò£©ÏñËØµÄÕýÑù±¾ÊÇÁíÒ»ÕÅÍ¼Æ¬µÄ¶ÔÓ¦Î»ÖÃ£¬¸ºÑù±¾Îª²ÉÑùµÄ¡£²¢ÇÒ£¬½«ÕâÁ½¸öpatchÍ¨¹ý·ÖÀàÆ÷ºó£¬¿ÉÒÔµÃµ½Ã¿¸öÏñËØµÄÖÃÐÅ¶È£¬ÔÚ¼ÆËãËðÊ§Ê±ÒÔ¸ÃÏñËØÖÃÐÅ¶È¸ü¸ßµÄÔ¤²âÎª±ê×¼£¨ÀýÈço1£©£¬ÈÃo2Ïòo1¶ÔÆë£¨¼ÆËão2µÄ¸ºÑù±¾£¬Ö»´«²¥o2µÄÌÝ¶È£©¡£
+- Negative Sampling:Ëæ»ú²ÉÑù¸ºÑù±¾µÄÐ§¹û²¢²»ºÃ£¬¿ÉÄÜÑ¡µ½Óë×ÔÉíÍ¬ÊôÍ¬Ò»Àà±ðµÄÏñËØµã¡£ÎÄÖÐ¸ù¾Ý·ÖÀàÆ÷µÄÊä³ö£¬×÷ÎªÎ±±êÇ©£¬Ö»²ÉÑù¸ºÀàÑù±¾¡£
+- Positive Filtering£ºÈç¹ûoverlap²¿·ÖÖÃÐÅ¶È¸ü¸ßµÄÏñËØµã£¬ÖÃÐÅ¶ÈÈÔÐ¡ÓÚÄ³Ò»ãÐÖµ£¬²»¼ÆËãÆäËðÊ§¡£
+
+## 10.PseudoSeg: Designing Pseudo Labels for Semantic Segmentation(2021 iclr)
+·Ç³£trickµÄÒ»ÆªÎÄÕÂ£¬ÈË¹¤Éè¼ÆÁËºÜ¶à¹«Ê½£¬±È½ÏÄÑ±Á£¬Ìá³öÁËÒ»ÖÖ¼ÆËãÎ±±êÇ©µÄ·½·¨¡£
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/9.png)
+- Ê×ÏÈ£¬Éæ¼°µ½ Class activation map (CAM)£¬Ô­±¾µÄ×÷ÓÃÊÇ¶¨Î»£¬¸Ð¾õÀàËÆÓÚÈÈÁ¦Í¼£¬ÈÏÎªËü¿ÉÒÔÉú³É¸ü¼Ó¾Ö²¿Ò»ÖÂµÄmask£¬µÃµ½H\*W\*CÎ¬µÄÌØÕ÷¡£
+- ÀûÓÃÄ£ÐÍºóÁ½²ã¾í»ýµÄÌØÕ÷Í¼£¬Æ´ÆðÀ´×÷Îª¸»º¬ÐÅÏ¢µÄÌØÕ÷£¬ºó½ÓÁ½¸ö²»Í¬µÄ1\*1¾í»ý£¬×÷ÎªK,Q¼ÆËã×Ô×¢ÒâÁ¦£¬ÔÙÒÔCAMÎªV¼ÓÈ¨£¬µÃµ½SGC 
+- ×îÖÕ£¬Í¨¹ýÐ£×¼ÈÚºÏ£¨Ò»¸ö×Ô¼ºÉè¼ÆµÄÊýÑ§¹«Ê½£©£¬½«SGCºÍ½âÂëÆ÷Êä³ö½áºÏÆðÀ´µÃµ½Î±±êÇ©¡£
+
+## 11.ST++: Make Self-training Work Better for Semi-supervised Semantic Segmentation(2022 cvpr)
+±¾ÎÄÌá³öÁË»ùÓÚself-trainingµÄ·½·¨£¬·¢ÏÖÓ¦ÓÃÁËÇ¿Êý¾ÝÔöÇ¿ºóÐ§¹ûºÜºÃ¡£
+- ¾­µä×ÔÑµÁ·£º¼à¶½ÑµÁ·½ÌÊ¦Ä£ÐÍ£»´òÎ±±êÇ©£»ËùÓÐÑù±¾£¨ÎÞ±êÇ©Ñù±¾Ê¹ÓÃÈõÔöÇ¿£©Ò»ÆðÑµÁ·ÐÂµÄÑ§ÉúÄ£ÐÍ¡£µ«ÊÇ£¬ÓÐ±ê¼ÇÑù±¾Ì«ÉÙµ¼ÖÂÎ±±êÇ©ÖÊÁ¿²»¼Ñ£»Ñ§ÉúÄ£ÐÍ¿ÉÄÜ¹ýÄâºÏ½ÌÊ¦Ä£ÐÍ£¬¶øÑ§²»µ½ÐÂ¶«Î÷¡£
+- ST£º½«ÓÐ±ê¼ÇÑù±¾¹ý²ÉÑùµ½ÓëÎÞ±ê¼ÇÑù±¾Ò»Ñù¹æÄ££¬Ò»Æð½øÐÐÑµÁ·£¬±ÜÃâÁËÎªÃ¿¸öÐ¡Åú´ÎÖØ¸´·ÖÅäÎ±±êÇ©£»ÔÚÑµÁ·Ñ§ÉúÄ£ÐÍÊ±£¬Ó¦ÓÃÈõÊý¾ÝÔöÇ¿ºóÔÙÓ¦ÓÃÇ¿Êý¾ÝÔöÇ¿SDA¡£
+- ST++£ºÓÅÏÈ¿¼ÂÇ¿É¿¿µÄÎ´±ê¼ÇÑù±¾½øÐÐÑµÁ·£¬¶ø·ÇÒ»ÊÓÍ¬ÈÊ¡£ÎªÁË±ÜÃâ³¬²ÎÊý£¨ÉèÖÃãÐÖµ£©£¬Ìá³öÁËÒ»ÖÖÑ¡Ôñ²ßÂÔ£¬ÔÚ¼à¶½ÑµÁ·¹ý³ÌÖÐ£¬´¢´æK¸ö¼ì²éµã£¬½«Ã¿¸ö¼ì²éµãµÄÎ±±êÇ©ºÍ×îÖÕµÄ¼ì²éµã¼ÆËãmeanIoU,²¢¼ÆËãÃ¿ÕÅÍ¼Æ¬ËùÓÐ¼ì²éµãµÄ¾ùÖµ¡£ÔÚÑµÁ·Ñ§ÉúÄ£ÐÍÊ±£¬ÏÈÊ¹ÓÃ±ê¼ÇÑù±¾ºÍmeanIoU×î¸ßµÄR¸öÎÞ±ê¼ÇÑù±¾£¨Ô½¸ßËµÃ÷Ô½ÎÈ¶¨£¬Ò²¾ÍÔ½¿É¿¿£©ÑµÁ·£¬¸øÊ£ÏÂµÄÎÞ±ê¼ÇÑù±¾ÖØÐÂ´òÎ±±êÇ©£¬×îºóÓÃËùÓÐÑù±¾ÑµÁ·Ò»¸öÐÂµÄÑ§ÉúÄ£ÐÍ¡£
+
+## 12.Semi-Supervised Semantic Segmentation Using Unreliable Pseudo-Labels(2022 cvpr)
+ºÜÓÐÒâË¼µÄË¼Â·£¬ideaµÄ²úÉúºÜ×ÔÈ»¡£ÔÚÒ»°ãµÄ×ÔÑµÁ·/Î±±êÇ©·½·¨ÖÐ£¬ÎªÁË±£Ö¤Î±±êÇ©µÄÖÊÁ¿£¬´ó¶àÖ»È¡Ô¤²âÖÃÐÅ¶È¸ßµÄÏñËØÑµÁ·£¬¶øºöÂÔ´ó²¿·ÖÆäÓàÏñËØ¡£ÖÃÐÅ¶ÈµÍµÄÏñËØ¿ÉÄÜÔÚtop_kÀà±ðµÄÔ¤²â»ìÏý£¨¸ÅÂÊ²î²»¶à£©£¬µ«ÊÇÔÚ¡°×î²»¿ÉÄÜµÄÀà±ð¡±ÉÏÍùÍùÅÐ¶Ï×¼È·£¨±ÈÈç£¬¶ÔÈËºÍÆïÊÖÀ§»óµÄÏñËØ£¬ÍùÍùºÜÈ·¶¨²»ÊÇ½¨ÖþÎï£©£¬¾ßÓÐÒ»¶¨µÄÐÅÏ¢¡£±¾ÎÄÌá³öÁËÒ»ÖÖÀûÓÃ²»¿ÉÐÅÎ±±êÇ©µÄ·½·¨¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/10.png)
+
+- ±¾ÎÄÊ¹ÓÃÊ¦Éú¿ò¼Ü£¬½ÌÊ¦¿ò¼ÜEMA¸üÐÂ£¬Ñ§Éú¿ò¼ÜÓÉ¼à¶½+ÎÞ¼à¶½+¶Ô±ÈËðÊ§ÑµÁ·
+- ¶ÔÓÚÎÞ±ê¼ÇÑù±¾£¬¼ÆËã½ÌÊ¦ÍøÂçÔ¤²âµÄÖðÏñËØìØ£¬¸ù¾ÝãÐÖµ£¨ãÐÖµ»áËæÊ±¼ä¶ø¼õÐ¡£©·ÖÎª¿É¿¿/²»¿É¿¿Î±±êÇ©£¬¿É¿¿Î±±êÇ©Ö±½Ó¼ÆËãÎÞ¼à¶½ËðÊ§
+- ÀûÓÃ²»¿É¿¿ÏñËØ(U2PL)£º¶ÔÃ¿¸öÀà£¬²ÉÑùÄ¿±êÏñËØ/ÕýÀý/¸ºÀý£¬¸ù¾ÝÒþ²Ø±íÕ÷¼ÆËã¶Ô±ÈËðÊ§
+  - anchorÏñËØ£º£¨Î±£©±ê¼ÇµÄÀà±ðÎªCÇÒÔ¤²âÖÃÐÅ¶È´óÓÚÄ³Ò»ãÐÖµ
+  - ÕýÀý£º´ÓanchorÏñËØÖÐ²ÉÑù
+  - ¸ºÀý£º¶ÔÓÚÓÐ±ê¼ÇÑù±¾£¬±ê¼Ç²»ÎªC£¬ÇÒÔ¤²âÎªCµÄÖÃÐÅ¶ÈÎªtop_k£»¶ÔÓÚÎÞ±ê¼ÇÑù±¾£¬²»¿ÉÐÅ£¬Ô¤²âÎªCµÄ¸ÅÂÊ¼È²»ÊÇ×î¿ÉÄÜµÄÒ²²»ÊÇ×î²»¿ÉÄÜµÄ
+  - ÓÉÓÚ³¤Î²·Ö²¼£¬ÓÐÐ©Àà±ðµÄ¸ºÀý½ÏÉÙ£¬Î¬»¤ÁËÒ»¸öÄÚ´æ¿â
+
+
+## 13.Perturbed and Strict Mean Teachers for Semi-supervised Semantic Segmentation(2022 cvpr)
+±¾ÎÄµÄ³ö·¢µãÒ²ºÜÓÐÒâË¼¡£ÔÚÒ»ÖÂÐÔÔ¼ÊøÖÐ£¬Î±±êÇ©£¨ÀÏÊ¦Ä£ÐÍ£©µÄÕýÈ·ÐÔºÜÖØÒª£¬´íÎóµÄÎ±±êÇ©»áÊ¹Ñ§ÉúÄ£ÐÍ¶ÔstrongÔöÇ¿µÄÍ¼Æ¬Æ«Ïò´íÎóµÄÔ¼Êø¡£
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/11.png)
+- ±¾ÎÄ»ùÓÚMean teacher¿ò¼Ü£¬Ê¹ÓÃ½»²æìØËðÊ§£¬ÒýÈëÁË¶àÖÖÈÅ¶¯¡£
+- ÍøÂçÈÅ¶¯¡£ÓÐÁ½¸ö½ÌÊ¦Ä£ÐÍ£¬È¡¶þÕßÊä³öµÄ¾ùÖµ×ösoftmax×÷ÎªÈí±êÇ©£¬È¡onehot×÷ÎªÓ²±êÇ©£¬ÔÚÑµÁ·Ê±Ö»ÓÃEMA¸üÐÂÆäÖÐÒ»¸öµÄ²ÎÊý¡£
+- ÌØÕ÷ÈÅ¶¯¡£¶ÔÓÚÑ§ÉúÄ£ÐÍ±àÂëÆ÷Êä³öµÄÒþ²Ø±íÊ¾Ê©¼ÓÈÅ¶¯£¬¸ÃÈÅ¶¯ÊÇÍ¨¹ýT-VAT¶Ô½ÌÊ¦Ä£ÐÍµÄÐéÄâ¶Ô¿¹ÑµÁ·µÃµ½µÄ£¬Ã»´ó¿´¶®ÔõÃ´²Ù×÷µÄ
+- ÊäÈëÈÅ¶¯£ºÈõ/Ç¿ÔöÇ¿
+- ÎÞ¼à¶½ËðÊ§Ê¹ÓÃonfidence-weighted CE loss£¬ÆäÊµ¾ÍÊÇ¼ÓÁË¸öÖÃÐÅ¶ÈÈ¨ÖØ£¬Î±±êÇ©Àà±ð¶ÔÓ¦µÄsoftmaxÖµ´óÓÚãÐÖµÊ±ÎªÈ¨ÖØ£¬·ñÔòÎªÁã¡£
+
+## 14.Semi-supervised Semantic Segmentation with Error Localization Network(2022 cvpr)
+ºÍÉÏÒ»Æª¶¯»úÓÐÐ©ÀàËÆ£¬¾Û½¹ÓÚÎ±±êÇ©µÄÖÊÁ¿ÎÊÌâ£¬Ìá³öÁËELN(Error Localization Network)¡£ÓëÖ®Ç°µÄECN(¾À´íÍøÂç)Ïà±È£¬ºóÕßÈÎÎñ¸ü¸´ÔÓ£¬¸üÈÝÒ×¹ýÄâºÏ£¬ELNÊÇÀà±ðÎÞ¹ØÈÎÎñ£¬²¢ÇÒÖ»ÐèÒªÔ¤²â¶þÖµÑÚÂë£¬·º»¯ÐÔÄÜ¸üºÃ¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/12.png)
+
+- Ê¹ÓÃMean teacher¿ò¼Ü£¬ÔÚ½âÂëÆ÷Í·ÉÏ»¹½ÓÁË¸öÓ³ÉäÆ÷£¬µÃµ½ÌØÕ÷½øÐÐ¶Ô±ÈÑ§Ï°
+- Ê¹ÓÃÓÐ±ê¼ÇÑù±¾£º¼à¶½ÑµÁ·Ñ§ÉúÍøÂç£¨±àÂëÆ÷+Ö÷½âÂëÆ÷£©£»ÑµÁ·K¸ö¸¨Öú½âÂëÆ÷£¬Ö»¼ÆËãËðÊ§´óÓÚÄ³¸öãÐÖµµÄ½âÂëÆ÷µÄËðÊ§£¨Ö»ÓÅ»¯ËðÊ§ºÜ´óµÄÍøÂç£©£¬ÒÔµÃµ½ËÆÊÇ¶ø·ÇµÄ´íÎóÔ¤²â£»¼ÆËãELNËðÊ§£¬½«K+1¸ö½âÂëÆ÷µÄÊä³ö·Ö±ðÓëÊäÈëºÍÖðÏñËØìØÍ¼Á¬½ÓÆðÀ´£¬ÊäÈëELNÍøÂçµÃµ½¶þÖµÑÚÂë£¬¼ÆËã¼ÓÈ¨½»²æìØËðÊ§£¨ÖµÎª1µÄÕýÈ·Ñù±¾±ÈÀý½Ï´ó£¬¸ù¾Ý1/0µÄÏñËØ±ÈÀý¼ÓÈ¨£©¡£´ËÎªÑµÁ·µÄµÚÒ»½×¶Î¡£
+- ÎÞ±ê¼ÇÑù±¾£º¸ù¾Ý½ÌÊ¦ÍøÂçÖ÷½âÂëÆ÷µÄÔ¤²â¼ÆËãELN£¬ÑÚÂëÎª0µÄÏñËØÎ±±êÇ©ÊÓÎªÎÞÐ§£¬ÓëÑ§ÉúÍøÂçµÄÊä³ö¼ÆËã¼à¶½ËðÊ§£»¼ÆËã¶Ô±ÈËðÊ§£¬ÒÔÑ§ÉúÍøÂçÊä³öµÄ±íÕ÷ÎªÄ¿±ê£¬ÔÚÀÏÊ¦ÍøÂçÊä³öÌØÕ÷ÖÐÑ°ÕÒÕýÀýºÍ¸ºÀý
+
+## 15.Bootstrapping Semantic Segmentation with Regional Contrast(2022 iclr)
+ºÍ12³ö·¢µãÒ»Ñù£¬Ê¹ÓÃ¶Ô±ÈÑ§Ï°(ReCoËðÊ§)ÀûÓÃ²»¿ÉÐÅÏñËØ¡£
+
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/13.png)
+- Mean teacher¿ò¼Ü£¬ÔÚ±àÂëÆ÷ºó½Ó±íÕ÷ÍøÂç¼ÆËãÌØÕ÷£¬ÒÔ½øÐÐ¶Ô±ÈÑ§Ï°£¬ReCoËðÊ§°Ñ¶Ô±ÈËðÊ§ÀïµÄÓàÏÒÏàËÆ¶È»»³Éµã»ýÁË£¬ÕýÀàÊÇminibatchÖÐËùÓÐ¸ÃÀàÏñËØµãµÄ¾ùÖµ£¬queryºÍ¸ºÀàÎª²ÉÑùµÃÀ´µÄ¡£Í¨¹ýactive sample£¬ReCoÖ»ÐèÒª¶ÔÐ¡ÓÚ 5% µÄ pixel ×ö contrastive learning£¬½ÚÊ¡ÄÚ´æ£¬ÊÊÓ¦ÁË·Ö¸îÈÎÎñ¡£
+- Active Key Sampling£ºÎÒÃÇÏ£Íû²ÉÑùÓë×ÔÉíÀ§»óµÄ¸ºÀà£¬ÔÚÑµÁ·Ê±¶¯Ì¬Î¬»¤Ò»¸öC\*C¾ØÕó£¬´æ´¢Ã¿Á½¸öÀà±ðÖ®¼äµÄÏàËÆ¶È£¨ÏñËØµã¾ùÖµÖ®¼äµÄµã»ý£©£¬softmaxºó¸ù¾Ý¸Ã·Ö²¼²ÉÑù¸ºÀà
+- Active Query Sampling£º¸øÎ±±êÇ©ÉèÖÃÒ»¸öãÐÖµ£¬Ö»²ÉÑùÖÃÐÅ¶ÈµÍµÄÀ§ÄÑÑù±¾½øÐÐ¶Ô±ÈÑ§Ï°
+- Ö»¶ÔÖÃÐÅ¶È¸ß£¨ãÐÖµÓëActive Query SamplingÒ»ÖÂ£©µÄÑù±¾¸ù¾ÝÎ±±êÇ©¼ÆËã¼à¶½ËðÊ§¡£
+
+## 16.Dmt: Dynamic mutual training for semi-supervised learning(2022 pr)
+±¾ÆªÎÄÕÂÒÀÈ»¹Ø×¢Î±±êÇ©µÄÖÊÁ¿ÎÊÌâ£¬ÈÏÎªÍ¨¹ý£¨½ÌÊ¦£©Ä£ÐÍÔ¤²âÖÃÐÅ¶ÈÉ¸Ñ¡¿ÉÄÜÉ¸È¥µÍÖÃÐÅ¶ÈÕýÈ·±êÇ©/±£Áô¸ßÖÃÐÅ¶ÈµÄ´íÎó±êÇ©£¬Ìá³öÁË Dynamic Mutual Training·½·¨£¬Á½¸öÄ£ÐÍÏà»¥Ñ§Ï°£¬²¢¸ù¾Ý·ÖÆçÅÐ¶ÏÔ¤²âµÄÖÃÐÅ¶È£¬ÖØÐÂ¼ÓÈ¨ËðÊ§¡£
+
+- Dynamic Mutual Training:¶ÔA¼à¶½ÑµÁ·£¬´òÎ±±êÇ©ºóÓÃËùÓÐÊý¾ÝÑµÁ·B¡£¶ÔÓÚÃ¿¸öÏñËØµãµÄ½»²æìØËðÊ§ÐèÒª¼ÆËãÒ»¸ö¶¯Ì¬È¨ÖØ£¬µ±AµÄÔ¤²âÀà±ðÓëBÏàÍ¬Ê±£¬ÒÔBÔ¤²âÖÃÐÅ¶È(µÄ$\gamma _1$´Î·½)ÎªÈ¨ÖØ£»²»Í¬Ê±£¬ÈôAµÄÔ¤²âÖÃÐÅ¶È¸ß£¬ÒÔBÔ¤²â¶ÔÓÚAÎ±±êÇ©Àà±ðµÄÖÃÐÅ¶ÈµÄ(µÄ$\gamma _2$´Î·½)ÎªÈ¨ÖØ£»²»Í¬ÇÒAµÄÖÃÐÅ¶ÈµÍÊ±£¬È¨ÖØÖÃÁã£¬ÈÏÎªÎ±±êÇ©²»¿ÉÐÅ¡£
+- Ä£ÐÍ³õÊ¼»¯£ºÎªÁË±£Ö¤·Ö¸îµÄÁ½¸öÄ£ÐÍÓÐ×ã¹»µÄ²îÒì£¬Ê¹ÓÃ²»Í¬Ô¤ÑµÁ·Êý¾Ý¼¯£¨·ÖÀàÊý¾Ý¼¯£©£»µ±ÓÐ±ê¼ÇÑù±¾ºÜÉÙÒÔÖÁÓÚÔ¤ÑµÁ·Õ¼±ÈºÜ´óÊ±£¬Ê¹ÓÃ¸üºÃµÄÔ¤ÑµÁ·È¨ÖØ£¬ÔÙ²ÉÑùÓÐ±ê¼ÇÑù±¾µÄ²»Í¬×Ó¼¯½øÐÐÑµÁ·¡£
+- µü´úÑµÁ·¿ò¼Ü£ºÃ¿´ÎÑµÁ·Ê±£¬Ê¹ÓÃÖÃÐÅ¶È×î¸ßµÄÒ»¶¨±ÈÀýµÄÎ±±êÇ©£»Ëæ×Åµü´ú¼ÓÉî£¬±ÈÀýÖð½¥Ôö¼Óµ½100%¡£
+- ¸Ð¾õÍ¦Ë®µÄÒ»ÆªÎÄÕÂ£¬»¹Ó²ÔìÁË¸öDifference maximized sampling·½·¨£¬PRÊÇÕâÑùµÄ£¬²»ÖªµÀÎªÉ¶ÒýÓÃÁ¿Í¦¸ßµÄ¡£
+
+
+## 17.Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation(2023 cvpr)
+
+±¾ÎÄ»Ø¹ËÁËSSLÓÉÈõµ½Ç¿Ò»ÖÂÐÔÔ¼Êø·½·¨£¬»ùÓÚFixMatch(ÓÃÈõÔöÇ¿µÄÔ¤²âÔ¼ÊøÇ¿ÔöÇ¿£¬ÓÃÍ¬Ò»¸öÄ£ÐÍ)£¬»ùÏß¿ÉÒÔ¿´×÷5µÄÌáÉý£¬10µÄ¼ò»¯£¬Ìá³öÁËÒ»¸öÐÂµÄÈÅ¶¯¿ò¼Ü¡£
+![Alt text](%E5%8D%8A%E7%9B%91%E7%9D%A3%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/image/14.png)
+- Unified Perturbations for Images and Features:³ýÁËÍ¼Ïñ¼¶µÄÇ¿ÔöÇ¿£¬»¹ÒýÈëÁËÌØÕ÷ÔöÇ¿£¬¼òµ¥µÄdropout¼´¿ÉµÃµ½ºÜºÃµÄÐ§¹û¡£½«²»Í¬¼¶±ðµÄÈÅ¶¯·Ö³É¶ÀÁ¢µÄÇ°À¡Á÷£¬Ê¹Ñ§ÉúÄÜ¹»¸üÖ±½ÓµØÔÚÃ¿¸öÁ÷ÖÐÊµÏÖÄ¿±êÒ»ÖÂÐÔ¡£
+- Dual-Stream Perturbations£º¶ÔÍ¬Ò»¸öÈõÔöÇ¿ÊäÈë£¬Ëæ»ú½øÐÐÁ½¸öÇ¿ÔöÇ¿£¬ÓÃ¹²ÏíµÄÈõÊÓÍ¼¹æ·¶Á½¸öÇ¿ÊÓÍ¼Ò²¿ÉÒÔ±»ÊÓÎªÇ¿ÖÆÕâÁ½¸öÇ¿ÊÓÍ¼Ö®¼äµÄÒ»ÖÂÐÔ¡£
+- ½«ÉÏ±ßÁ½¸öÈÅ¶¯×éºÏÆðÀ´¾ÍÊÇUniMatch£¬ËÄ¸ö¶ÀÁ¢µÄÇ°À¡£¬ÈõÔöÇ¿/Á½¸öÇ¿ÔöÇ¿/ÌØÕ÷ÈÅ¶¯¡£
+
+## 18.Augmentation Matters: A Simple-yet-Effective Approach to Semi-supervised Semantic Segmentation(2023 cvpr)
+SSLÓïÒå·Ö¸îSOTAÖð½¥¸´ÔÓ£¬±¾ÎÄÌá³öÁËÒ»ÖÖ¼òµ¥ÓÐÐ§µÄ¿ò¼Ü£¬Ö÷ÒªÍ¨¹ý¼ò»¯Ç¿Êý¾ÝÔöÇ¿£¬×ÔÊÊÓ¦µØ×¢Èë±ê¼ÇÐÅÏ¢£¬Ê¹Õë¶Ô¼à¶½Ñ§Ï°µÄÊý¾ÝÔöÇ¿·½·¨ÊÊÓ¦°ë¼à¶½Ñ§Ï°¡£
+
+Mean teacher¿ò¼Ü¡£¼à¶½ËðÊ§+ÎÞ¼à¶½ËðÊ§¡£¶ÔÓÚÎÞ±ê¼ÇÑù±¾£¬Ìá³öÁ½ÖÖÐÂµÄÊý¾ÝÔöÇ¿·½Ê½¡£
+- Random Intensity-based Augmentations:½«»ùÓÚÇ¿¶ÈµÄÔöÇ¿·Åµ½Ò»¸ö³Ø×ÓÀï£¬Ëæ»ú²ÉÑùÇ¿¶È£¬Ëæ»ú²ÉÑùÔöÇ¿µÄÊýÁ¿£¨ÉèÁË¸ö×î´óÖµ£©£¬ÔÙËæ»ú²ÉÑùÔöÇ¿¡£ÎÄÖÐÈÏÎª£¬»ùÓÚÇ¿¶ÈµÄÔöÇ¿ÊÇÁ¬ÐøµÄ£¬¿ÉÒÔÏû³ýÆ«²î£¬ÊÊºÏÎÞ¼à¶½Ñ§Ï°¡£
+- Adaptive Label-aided CutMix£º½«Í¼Æ¬½øÐÐÈõÔöÇ¿+»ùÓÚÇ¿¶ÈµÄÔöÇ¿ºó£¬¸ù¾Ýµ±Ç°Ä£ÐÍµÄÔ¤²â¼ÆËãÃ¿ÕÅÍ¼Æ¬µÄÖÃÐÅ¶È£¬¸ù¾ÝÕâÒ»¸ÅÂÊËæ»ú²ÉÑùÎÞ±ê¼ÇÍ¼Æ¬ÓëÓÐ±ê¼ÇÍ¼Æ¬mixup(ÖÃÐÅ¶ÈµÍµÄÎÞ±ê¼ÇÍ¼Æ¬£¬ÊÊºÏ±»ÓÐ±ê¼ÇÍ¼Æ¬°ïÖú)£¬ÖÃÐÅ¶È¸ßµÄ²»ÓÃ»ìºÏ£¨£¿¿´Í¼Æ¬ÊÇÕâÑùµÄ£©£¬½«»ìºÏ£¨»ò²»Ðè»ìºÏµÄ£©ºóµÄÍ¼Æ¬ÔÙÓëÎÞ±ê¼ÇÑù±¾Ëæ»úmix£¬µÃµ½×îÖÕÔöÇ¿µÄÍ¼Æ¬¡£
