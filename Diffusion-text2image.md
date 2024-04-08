@@ -17,10 +17,7 @@
 - [12. DALLE-2:Hierarchical Text-Conditional Image Generation with CLIP Latents(2022 openai)](#12-dalle-2hierarchical-text-conditional-image-generation-with-clip-latents2022-openai)
 - [13. Imagen:Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding(2022 nips)](#13-imagenphotorealistic-text-to-image-diffusion-models-with-deep-language-understanding2022-nips)
 - [14. LDM: High-Resolution Image Synthesis with Latent Diffusion Models](#14-ldm-high-resolution-image-synthesis-with-latent-diffusion-models)
-- [15. DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation(2023.5)](#15-dreambooth-fine-tuning-text-to-image-diffusion-models-for-subject-driven-generation20235)
-- [16. DiT:Scalable Diffusion Models with Transformers(2023.5)](#16-ditscalable-diffusion-models-with-transformers20235)
-- [17. LoRA:Low-Rank Adaption of large language model(2021.10)](#17-loralow-rank-adaption-of-large-language-model202110)
-- [18. Controlnet: Adding Conditional Control to Text-to-Image Diffusion Models(2023.11)](#18-controlnet-adding-conditional-control-to-text-to-image-diffusion-models202311)
+- [15. DiT:Scalable Diffusion Models with Transformers(2023.5)](#15-ditscalable-diffusion-models-with-transformers20235)
 
 > 2-9的主要推导见手写笔记
 # 1. Understanding Diffusion Models: A Unified Perspective
@@ -227,22 +224,7 @@ Openai的文生图模型，主要包括两部分，先利用CLIP根据文本y生
 - Conditioning Mechanisms:为了统一图片生成领域的条件模态，本文在UNet结构中加入交叉注意力机制，从而只需设计domain-specifical的prompt编码器，即可实现任意模态的条件生成，具体来说，prompt作为K和V。
 ![Alt text](Paper\diffusion\image\image-16.png)
 
-
-# 15. DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation(2023.5)
-Google的工作，过去的文生图模型缺乏模仿给定subject参考集（比如确定外观的狗）并合成新的在不同背景下subject的能力。Dreambooth是一种文本到图像扩散模型“个性化”的新方法，对预训练的文生图模型进行微调，使其学会将唯一标识符与特定subject绑定，就可以使用唯一标识符来合成不同场景中subject的新颖的真实感图像，并可以保留其关键的识别特征。
-- 目标：给定一个subject的几个图像，没有任何文本描述，目标是生成具有高细节保真度和**文本提示引导**的变化的subject新图像，变化包括改变subject位置、改变subject属性（例如颜色或形状）、修改subject的姿势、视点和其他语义修改。
-![Alt text](Paper\diffusion\image\image-17.png)
-- Designing Prompts for Few-Shot Personalization:为了将subject加入扩散模型的“词典中”，文中为few-shot set设计了以下prompt，a [identifier] [class noun]，class noun是为了利用固有的类先验知识
-- Rare-token Identifiers:文中发现现存英文单词作为identifier是次优化的，因为模型需要分离其固有先验再与subject联系起来。而随机特定编码如xx55y效果也不好，因为分词器会把每个letter编码成token也有强先验。文中采用的方法是，先在词汇表中对rare token进行搜索，再其反编码回text（长度小于等于3时效果好），从而得到定义unique identifier的字符序列。
-- Class-specific Prior Preservation Loss:在微调预训练扩撒模型时，为了保持先验知识并避免降低多样性，提出了一种loss
-![Alt text](Paper\diffusion\image\image-19.png)
-  第二项损失，先输入$x_{pr}$=a [class noun]，生成基于模型先验的图片$x_{pr}$，用它自己生成的样本来监督模型，从而在本batch的参数优化中保持该先验；第一项损失即为平常的重建损失，以few-shot set为监督。
-
-<p align = "center">  
-<img src="Paper\diffusion\image\image-18.png"  width="300" />
-</p>
-
-# 16. DiT:Scalable Diffusion Models with Transformers(2023.5)
+# 15. DiT:Scalable Diffusion Models with Transformers(2023.5)
 过去扩散模型均使用卷积U-net架构，本文提出Diffusion Transformers(DiT)，基于transformer的LDM模型，尽可能忠实于标准Transformer架构以保留其scalable特性。DiT具有很好的scalable能力，当GFLOPS增加（网络宽度/深度/token长度上升），效果总在提高。
 - Preliminaries:本文使用IDDPM中的训练方法，用简化训练目标训$\mu$，再用L训方差；用了Classifier-free guidance；文中采用LDM，分别用现成的卷积VAE和基于 Transformer 的 DDPM。
 - Patchify，将潜在表示token化，使用ViT一致的位置编码；
@@ -255,30 +237,3 @@ Google的工作，过去的文生图模型缺乏模仿给定subject参考集（�
 ![Alt text](Paper\diffusion\image\image-20.png)
 
 
-
-# 17. LoRA:Low-Rank Adaption of large language model(2021.10)
-本用来给LLM微调的方法，原理很简单，在扩散模型中也很有效。
-
-<p align = "center">  
-<img src="Paper\diffusion\image\image-21.png"  width="300" />
-</p>
-
-- 方法：固定大网络参数，只训练某些层参数的增量，且这些参数增量可通过矩阵分解变成更少的可训练参数。具体来说，对于参数$W_O$，在微调时训练$W=W_0+\Delta W=W_0+AB$，其中$W_0$参数冻结，只训练$A\in R^{D\times r}, B\in R^{r\times D}$，由于r可以很小（如2），要训练的参数量大大下降。在初始化时，A初始化为标准高斯分布，B初始化为0.
-- 该方法主要用于某些层的线性部分，比如Transformer中的QKV的线性投影，以及FFN的线性部分
-- 扩散模型：大多用LoRA微调CLIP以及Unet中交叉注意力层的线性部分。
-# 18. Controlnet: Adding Conditional Control to Text-to-Image Diffusion Models(2023.11)
-本文提出了一种Paper\diffusion\image\Image-to-image translation的条件控制扩散模型方法，利用附加图片（例如，边缘图、人体姿势骨架、分割图、深度、法线等）条件控制生成的图片。而在特定条件下的训练数据量，明显小于一般文本到图像训练的可用数据，不能直接训练/微调，本文提出Controlnet，增强预训练文生图扩散模型对于spatially localized, task-specifically的图像条件生成。实现了很好的效果，并对数据集大小具有很好的scalabel和鲁棒性。
-- ControlNet:对于一个NN块，ControlNet将原有参数固定并复制，复制部分可训练且由零卷积残差连接到原有部分，复制块的输入为x+经过零卷积的条件c，零卷积可以保护复制块参数不被训练之初的噪声干扰
-<p align = "center">  
-<img src="Paper\diffusion\image\image-22.png"  width="300" />
-</p>
-- Controlnet for SD:对于SD的编码块和中间块使用Controlnet，并且将结果加到skip connection上。由于SD是LDM，图片条件c被resize到64\*64且经过一个tiny的CNN再输入Controlnet
-<p align = "center">  
-<img src="Paper\diffusion\image\image-23.png"  width="200" />
-</p>
-
-- Training:训练时，随机50%将文本$c_t$替换为空字符串，这种方法增强了 ControlNet 直接识别输入条件图像中的语义（例如边缘、姿势、深度等）的能力，以替代提示。由于零卷积不会给网络增加噪声，因此模型应该始终能够预测高质量的图像，但是对于条件控制的学习，会出现“突然收敛现象”，模型并不是逐渐学习条件控制，而是突然成功地遵循输入条件生成图像（通常优化步骤少于 10K）
-![Alt text](Paper\diffusion\image\image-24.png)
-- Classifier-free guidance resolution weighting：为了实现CFG，条件图片默认加入到两种噪声的生成中。对于没有文本prompt的情况，全加入会导致CFG失效，而只加入条件噪声会导致guidance过强。为此提出了CFG Resolution Weighting，在向$\epsilon_c$中加入条件图片时，Controlnet结果加入到skip-connection之前成一个权重$w_i=(\frac78)^{12-i}$，$i$为第i个block([0,12])，由浅到深权重逐渐趋向1
-![Alt text](Paper\diffusion\image\image-25.png)
-- Composing multiple ControlNets：可以使用多张条件图片，直接将对应Controlnet的结果加起来即可

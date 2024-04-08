@@ -6,7 +6,7 @@
 # AIGC
 - [Diffusion Models & Text2Image](Diffusion-text2image.md) ([Handwritten Notes](Handwritten-Notes.pdf))
 - [Motion Generation](Motion_Diffusion.md)
-- [Controlable Generation](Controlable_Generation.md)
+- [Controllable Generation](Controllable_Generation.md)
 
 
 # Computer Vision
